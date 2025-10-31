@@ -9,24 +9,12 @@
 
 
 module lgsvl_msgs {
-
-module msg {
-
-module dds_ {
-
-
-struct DetectedRadarObjectArray_ {
-std_msgs::msg::dds_::Header_ header;
-sequence<lgsvl_msgs::msg::dds_::DetectedRadarObject_> objects;
-
-
-};
-
-
-};  // module dds_
-
-};  // module msg
-
+    module msg {
+        struct DetectedRadarObjectArray {
+        std_msgs::msg::Header header;
+        sequence<lgsvl_msgs::msg::DetectedRadarObject> objects;
+        };
+    };  // module msg
 };  // module lgsvl_msgs
 
 

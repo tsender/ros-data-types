@@ -19,14 +19,12 @@
 
 module turtlesim {
   module srv {
-    module dds_ {
-      @appendable struct Spawn_Request_ {
+      @appendable struct Spawn_Request {
         float x;
         float y;
         float theta;
         string name;
       };
-    };
   };
 };
 

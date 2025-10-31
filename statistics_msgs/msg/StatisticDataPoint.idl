@@ -19,12 +19,10 @@
 
 module statistics_msgs {
   module msg {
-    module dds_ {
-      @appendable struct StatisticDataPoint_ {
+      @appendable struct StatisticDataPoint {
         octet data_type;
         double data;
       };
-    };
   };
 };
 

@@ -21,17 +21,15 @@
 
 module action_msgs {
   module srv {
-    module dds_ {
-      module CancelGoal_Response_Constants {
-        const octet ERROR_NONE_ = 0;
-        const octet ERROR_REJECTED_ = 1;
-        const octet ERROR_UNKNOWN_GOAL_ID_ = 2;
-        const octet ERROR_GOAL_TERMINATED_ = 3;
-      };
-      @appendable struct CancelGoal_Response_ {
-        octet return_code;
-        sequence<action_msgs::msg::dds_::GoalInfo_> goals_canceling;
-      };
+    module CancelGoal_Response_Constants {
+      const octet ERROR_NONE = 0;
+      const octet ERROR_REJECTED = 1;
+      const octet ERROR_UNKNOWN_GOAL_ID = 2;
+      const octet ERROR_GOAL_TERMINATED = 3;
+    };
+    @appendable struct CancelGoal_Response {
+      octet return_code;
+      sequence<action_msgs::msg::GoalInfo> goals_canceling;
     };
   };
 };

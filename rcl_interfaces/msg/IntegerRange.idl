@@ -19,13 +19,11 @@
 
 module rcl_interfaces {
   module msg {
-    module dds_ {
-      @appendable struct IntegerRange_ {
+      @appendable struct IntegerRange {
         int64 from_value;
         int64 to_value;
         uint64 step;
       };
-    };
   };
 };
 

@@ -21,15 +21,13 @@
 
 module sensor_msgs {
   module msg {
-    module dds_ {
-      @appendable struct JointState_ {
-        std_msgs::msg::dds_::Header_ header;
+      @appendable struct JointState {
+        std_msgs::msg::Header header;
         sequence<string> name;
         sequence<double> position;
         sequence<double> velocity;
         sequence<double> effort;
       };
-    };
   };
 };
 

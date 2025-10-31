@@ -23,19 +23,17 @@
 
 module rosidl_generator_py {
   module msg {
-    module dds_ {
-      @appendable struct MultiNested_ {
-        rosidl_generator_py::msg::dds_::Arrays_ array_of_arrays[3];
-        rosidl_generator_py::msg::dds_::BoundedSequences_ array_of_bounded_sequences[3];
-        rosidl_generator_py::msg::dds_::UnboundedSequences_ array_of_unbounded_sequences[3];
-        sequence<rosidl_generator_py::msg::dds_::Arrays_,3> bounded_sequence_of_arrays;
-        sequence<rosidl_generator_py::msg::dds_::BoundedSequences_,3> bounded_sequence_of_bounded_sequences;
-        sequence<rosidl_generator_py::msg::dds_::UnboundedSequences_,3> bounded_sequence_of_unbounded_sequences;
-        sequence<rosidl_generator_py::msg::dds_::Arrays_> unbounded_sequence_of_arrays;
-        sequence<rosidl_generator_py::msg::dds_::BoundedSequences_> unbounded_sequence_of_bounded_sequences;
-        sequence<rosidl_generator_py::msg::dds_::UnboundedSequences_> unbounded_sequence_of_unbounded_sequences;
+      @appendable struct MultiNested {
+        rosidl_generator_py::msg::Arrays array_of_arrays[3];
+        rosidl_generator_py::msg::BoundedSequences array_of_bounded_sequences[3];
+        rosidl_generator_py::msg::UnboundedSequences array_of_unbounded_sequences[3];
+        sequence<rosidl_generator_py::msg::Arrays,3> bounded_sequence_of_arrays;
+        sequence<rosidl_generator_py::msg::BoundedSequences,3> bounded_sequence_of_bounded_sequences;
+        sequence<rosidl_generator_py::msg::UnboundedSequences,3> bounded_sequence_of_unbounded_sequences;
+        sequence<rosidl_generator_py::msg::Arrays> unbounded_sequence_of_arrays;
+        sequence<rosidl_generator_py::msg::BoundedSequences> unbounded_sequence_of_bounded_sequences;
+        sequence<rosidl_generator_py::msg::UnboundedSequences> unbounded_sequence_of_unbounded_sequences;
       };
-    };
   };
 };
 

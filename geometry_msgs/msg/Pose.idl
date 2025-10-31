@@ -22,12 +22,10 @@
 
 module geometry_msgs {
   module msg {
-    module dds_ {
-      @appendable struct Pose_ {
-        geometry_msgs::msg::dds_::Point_ position;
-        geometry_msgs::msg::dds_::Quaternion_ orientation;
+      @appendable struct Pose {
+        geometry_msgs::msg::Point position;
+        geometry_msgs::msg::Quaternion orientation;
       };
-    };
   };
 };
 

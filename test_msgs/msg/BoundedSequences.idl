@@ -23,8 +23,7 @@
 
 module test_msgs {
   module msg {
-    module dds_ {
-      @appendable struct BoundedSequences_ {
+      @appendable struct BoundedSequences {
         sequence<boolean,3> bool_values;
         sequence<octet,3> byte_values;
         sequence<octet,3> char_values;
@@ -38,10 +37,10 @@ module test_msgs {
         sequence<uint32,3> uint32_values;
         sequence<int64,3> int64_values;
         sequence<uint64,3> uint64_values;
-        sequence<string,3 > string_values;
-        sequence<test_msgs::msg::dds_::BasicTypes_,3> basic_types_values;
-        sequence<test_msgs::msg::dds_::Constants_,3> constants_values;
-        sequence<test_msgs::msg::dds_::Defaults_,3> defaults_values;
+        sequence<string,3> string_values;
+        sequence<test_msgs::msg::BasicTypes,3> basic_types_values;
+        sequence<test_msgs::msg::Constants,3> constants_values;
+        sequence<test_msgs::msg::Defaults,3> defaults_values;
         sequence<boolean,3> bool_values_default;
         sequence<octet,3> byte_values_default;
         sequence<octet,3> char_values_default;
@@ -55,10 +54,9 @@ module test_msgs {
         sequence<uint32,3> uint32_values_default;
         sequence<int64,3> int64_values_default;
         sequence<uint64,3> uint64_values_default;
-        sequence<string,3 > string_values_default;
+        sequence<string,3> string_values_default;
         int32 alignment_check;
       };
-    };
   };
 };
 

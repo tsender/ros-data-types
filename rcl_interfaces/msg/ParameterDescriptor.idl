@@ -22,17 +22,15 @@
 
 module rcl_interfaces {
   module msg {
-    module dds_ {
-      @appendable struct ParameterDescriptor_ {
+      @appendable struct ParameterDescriptor {
         string name;
         octet type;
         string description;
         string additional_constraints;
         boolean read_only;
-        sequence<rcl_interfaces::msg::dds_::FloatingPointRange_,1> floating_point_range;
-        sequence<rcl_interfaces::msg::dds_::IntegerRange_,1> integer_range;
+        sequence<rcl_interfaces::msg::FloatingPointRange,1> floating_point_range;
+        sequence<rcl_interfaces::msg::IntegerRange,1> integer_range;
       };
-    };
   };
 };
 

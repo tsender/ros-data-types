@@ -17,19 +17,19 @@
 #ifndef __gazebo_msgs__srv__GetJointProperties_Response__idl
 #define __gazebo_msgs__srv__GetJointProperties_Response__idl
  
-module gazebo_msgs { module srv { module dds_ { 
- 
-enum Type { REVOLUTE, CONTINUOUS, PRISMATIC, FIXED, BALL, UNIVERSAL }; 
- 
-struct GetJointProperties_Response_ { 
-    sequence<double> damping; 
-    sequence<double> position; 
-    sequence<double> rate; 
-    boolean success; 
-    Type type;
-    string status_message; 
-}; 
- 
-}; }; };  // module dds_::srv::gazebo_msgs 
+module gazebo_msgs { 
+    module srv {  
+        enum Type { REVOLUTE, CONTINUOUS, PRISMATIC, FIXED, BALL, UNIVERSAL }; 
+        
+        struct GetJointProperties_Response { 
+            sequence<double> damping; 
+            sequence<double> position; 
+            sequence<double> rate; 
+            boolean success; 
+            Type type;
+            string status_message; 
+        };
+    }; 
+};
 
 #endif  // __gazebo_msgs__srv__GetJointProperties_Response__idl

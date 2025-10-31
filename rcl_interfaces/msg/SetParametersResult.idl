@@ -19,12 +19,10 @@
 
 module rcl_interfaces {
   module msg {
-    module dds_ {
-      @appendable struct SetParametersResult_ {
+      @appendable struct SetParametersResult {
         boolean successful;
         string reason;
       };
-    };
   };
 };
 

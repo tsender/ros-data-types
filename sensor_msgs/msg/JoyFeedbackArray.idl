@@ -21,11 +21,9 @@
 
 module sensor_msgs {
   module msg {
-    module dds_ {
-      @appendable struct JoyFeedbackArray_ {
-        sequence<sensor_msgs::msg::dds_::JoyFeedback_> array;
+      @appendable struct JoyFeedbackArray {
+        sequence<sensor_msgs::msg::JoyFeedback> array;
       };
-    };
   };
 };
 

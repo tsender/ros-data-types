@@ -21,16 +21,15 @@
 
 module rcl_interfaces {
   module msg {
-    module dds_ {
       module Log_Constants {
-        const octet DEBUG_ = 10;
-        const octet INFO_ = 20;
-        const octet WARN_ = 30;
-        const octet ERROR_ = 40;
-        const octet FATAL_ = 50;
+        const octet DEBUG = 10;
+        const octet INFO = 20;
+        const octet WARN = 30;
+        const octet ERROR = 40;
+        const octet FATAL = 50;
       };
-      @appendable struct Log_ {
-        builtin_interfaces::msg::dds_::Time_ stamp;
+      @appendable struct Log {
+        builtin_interfaces::msg::Time stamp;
         octet level;
         string name;
         string msg;
@@ -38,7 +37,6 @@ module rcl_interfaces {
         string function;
         uint32 line;
       };
-    };
   };
 };
 

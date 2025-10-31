@@ -22,13 +22,11 @@
 
 module sensor_msgs {
   module msg {
-    module dds_ {
-      @appendable struct MagneticField_ {
-        std_msgs::msg::dds_::Header_ header;
-        geometry_msgs::msg::dds_::Vector3_ magnetic_field;
+      @appendable struct MagneticField {
+        std_msgs::msg::Header header;
+        geometry_msgs::msg::Vector3 magnetic_field;
         double magnetic_field_covariance[9];
       };
-    };
   };
 };
 

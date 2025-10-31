@@ -8,25 +8,14 @@
 
 
 module lgsvl_msgs {
-
-module msg {
-
-module dds_ {
-
-
-struct VehicleOdometry_ {
-std_msgs::msg::dds_::Header_ header;
-float velocity;
-float front_wheel_angle;
-float rear_wheel_angle;
-
-};
-
-
-};  // module dds_
-
-};  // module msg
-
+    module msg {
+        struct VehicleOdometry {
+        std_msgs::msg::Header header;
+        float velocity;
+        float front_wheel_angle;
+        float rear_wheel_angle;
+        };
+    };  // module msg
 };  // module lgsvl_msgs
 
 

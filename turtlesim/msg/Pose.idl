@@ -19,15 +19,13 @@
 
 module turtlesim {
   module msg {
-    module dds_ {
-      @appendable struct Pose_ {
+      @appendable struct Pose {
         float x;
         float y;
         float theta;
         float linear_velocity;
         float angular_velocity;
       };
-    };
   };
 };
 

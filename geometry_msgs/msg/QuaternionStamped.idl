@@ -22,12 +22,10 @@
 
 module geometry_msgs {
   module msg {
-    module dds_ {
-      @appendable struct QuaternionStamped_ {
-        std_msgs::msg::dds_::Header_ header;
-        geometry_msgs::msg::dds_::Quaternion_ quaternion;
+      @appendable struct QuaternionStamped {
+        std_msgs::msg::Header header;
+        geometry_msgs::msg::Quaternion quaternion;
       };
-    };
   };
 };
 

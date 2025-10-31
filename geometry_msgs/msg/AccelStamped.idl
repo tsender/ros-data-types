@@ -22,11 +22,9 @@
 
 module geometry_msgs {
   module msg {
-    module dds_ {
-      @appendable struct AccelStamped_ {
-        std_msgs::msg::dds_::Header_ header;
-        geometry_msgs::msg::dds_::Accel_ accel;
-      };
+    @appendable struct AccelStamped {
+      std_msgs::msg::Header header;
+      geometry_msgs::msg::Accel accel;
     };
   };
 };

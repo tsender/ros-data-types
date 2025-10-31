@@ -19,11 +19,9 @@
 
 module test_msgs {
   module action {
-    module dds_ {
-      @appendable struct Fibonacci_Result_ {
+      @appendable struct Fibonacci_Result {
         sequence<int32> sequence_;
       };
-    };
   };
 };
 

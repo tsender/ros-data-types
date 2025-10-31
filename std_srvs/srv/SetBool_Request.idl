@@ -19,11 +19,9 @@
 
 module std_srvs {
   module srv {
-    module dds_ {
-      @appendable struct SetBool_Request_ {
+      @appendable struct SetBool_Request {
         boolean data;
       };
-    };
   };
 };
 

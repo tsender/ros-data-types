@@ -19,13 +19,11 @@
 
 module turtlesim {
   module srv {
-    module dds_ {
-      @appendable struct TeleportAbsolute_Request_ {
+      @appendable struct TeleportAbsolute_Request {
         float x;
         float y;
         float theta;
       };
-    };
   };
 };
 

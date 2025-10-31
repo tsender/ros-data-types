@@ -19,11 +19,9 @@
 
 module test_rclcpp {
   module msg {
-    module dds_ {
-      @appendable struct UInt32_ {
+      @appendable struct UInt32 {
         uint32 data;
       };
-    };
   };
 };
 

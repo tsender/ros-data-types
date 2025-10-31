@@ -20,15 +20,15 @@
 #include "builtin_interfaces/msg/Time.idl" 
 #include "builtin_interfaces/msg/Duration.idl" 
  
-module gazebo_msgs { module srv { module dds_ { 
- 
-struct ApplyJointEffort_Request_ { 
-    string joint_name; 
-    double effort; 
-    builtin_interfaces::msg::dds_::Time_ start_time; 
-    builtin_interfaces::msg::dds_::Duration_ duration; 
-}; 
- 
-}; }; };  // module dds_::srv::gazebo_msgs 
+module gazebo_msgs { 
+    module srv {
+        struct ApplyJointEffort_Request { 
+            string joint_name; 
+            double effort; 
+            builtin_interfaces::msg::Time start_time; 
+            builtin_interfaces::msg::Duration duration; 
+        }; 
+    }; 
+};
 
 #endif  // __gazebo_msgs__srv__ApplyJointEffort_Request__idl

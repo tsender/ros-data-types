@@ -21,10 +21,8 @@
 
 module action_msgs {
   module msg {
-    module dds_ {
-      @appendable struct GoalStatusArray_ {
-        sequence<action_msgs::msg::dds_::GoalStatus_> status_list;
-      };
+    @appendable struct GoalStatusArray {
+      sequence<action_msgs::msg::GoalStatus> status_list;
     };
   };
 };

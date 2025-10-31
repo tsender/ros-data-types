@@ -22,12 +22,10 @@
 
 module shape_msgs {
   module msg {
-    module dds_ {
-      @appendable struct Mesh_ {
-        sequence<shape_msgs::msg::dds_::MeshTriangle_> triangles;
-        sequence<geometry_msgs::msg::dds_::Point_> vertices;
+      @appendable struct Mesh {
+        sequence<shape_msgs::msg::MeshTriangle> triangles;
+        sequence<geometry_msgs::msg::Point> vertices;
       };
-    };
   };
 };
 

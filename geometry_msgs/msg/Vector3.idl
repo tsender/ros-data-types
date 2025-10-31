@@ -19,13 +19,11 @@
 
 module geometry_msgs {
   module msg {
-    module dds_ {
-      @appendable struct Vector3_ {
+      @appendable struct Vector3 {
         double x;
         double y;
         double z;
       };
-    };
   };
 };
 

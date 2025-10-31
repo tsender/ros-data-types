@@ -19,14 +19,12 @@
 
 module geometry_msgs {
   module msg {
-    module dds_ {
-      @appendable struct Quaternion_ {
+      @appendable struct Quaternion {
         double x;
         double y;
         double z;
         double w;
       };
-    };
   };
 };
 

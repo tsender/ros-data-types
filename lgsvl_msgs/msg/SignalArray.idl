@@ -9,24 +9,12 @@
 
 
 module lgsvl_msgs {
-
-module msg {
-
-module dds_ {
-
-
-struct SignalArray_ {
-std_msgs::msg::dds_::Header_ header;
-sequence<lgsvl_msgs::msg::dds_::Signal_> signals;
-
-
-};
-
-
-};  // module dds_
-
-};  // module msg
-
+    module msg {
+        struct SignalArray {
+        std_msgs::msg::Header header;
+        sequence<lgsvl_msgs::msg::Signal> signals;
+        };
+    };  // module msg
 };  // module lgsvl_msgs
 
 

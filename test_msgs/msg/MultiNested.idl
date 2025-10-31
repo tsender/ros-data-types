@@ -23,19 +23,17 @@
 
 module test_msgs {
   module msg {
-    module dds_ {
-      @appendable struct MultiNested_ {
-        test_msgs::msg::dds_::Arrays_ array_of_arrays[3];
-        test_msgs::msg::dds_::BoundedSequences_ array_of_bounded_sequences[3];
-        test_msgs::msg::dds_::UnboundedSequences_ array_of_unbounded_sequences[3];
-        sequence<test_msgs::msg::dds_::Arrays_,3> bounded_sequence_of_arrays;
-        sequence<test_msgs::msg::dds_::BoundedSequences_,3> bounded_sequence_of_bounded_sequences;
-        sequence<test_msgs::msg::dds_::UnboundedSequences_,3> bounded_sequence_of_unbounded_sequences;
-        sequence<test_msgs::msg::dds_::Arrays_> unbounded_sequence_of_arrays;
-        sequence<test_msgs::msg::dds_::BoundedSequences_> unbounded_sequence_of_bounded_sequences;
-        sequence<test_msgs::msg::dds_::UnboundedSequences_> unbounded_sequence_of_unbounded_sequences;
+      @appendable struct MultiNested {
+        test_msgs::msg::Arrays array_of_arrays[3];
+        test_msgs::msg::BoundedSequences array_of_bounded_sequences[3];
+        test_msgs::msg::UnboundedSequences array_of_unbounded_sequences[3];
+        sequence<test_msgs::msg::Arrays,3> bounded_sequence_of_arrays;
+        sequence<test_msgs::msg::BoundedSequences,3> bounded_sequence_of_bounded_sequences;
+        sequence<test_msgs::msg::UnboundedSequences,3> bounded_sequence_of_unbounded_sequences;
+        sequence<test_msgs::msg::Arrays> unbounded_sequence_of_arrays;
+        sequence<test_msgs::msg::BoundedSequences> unbounded_sequence_of_bounded_sequences;
+        sequence<test_msgs::msg::UnboundedSequences> unbounded_sequence_of_unbounded_sequences;
       };
-    };
   };
 };
 

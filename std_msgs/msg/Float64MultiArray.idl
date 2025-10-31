@@ -21,12 +21,10 @@
 
 module std_msgs {
   module msg {
-    module dds_ {
-      @appendable struct Float64MultiArray_ {
-        std_msgs::msg::dds_::MultiArrayLayout_ layout;
+      @appendable struct Float64MultiArray {
+        std_msgs::msg::MultiArrayLayout layout;
         sequence<double> data;
       };
-    };
   };
 };
 

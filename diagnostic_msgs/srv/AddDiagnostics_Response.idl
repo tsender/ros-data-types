@@ -19,11 +19,9 @@
 
 module diagnostic_msgs {
   module srv {
-    module dds_ {
-      @appendable struct AddDiagnostics_Response_ {
-        boolean success;
-        string message;
-      };
+    @appendable struct AddDiagnostics_Response {
+      boolean success;
+      string message;
     };
   };
 };

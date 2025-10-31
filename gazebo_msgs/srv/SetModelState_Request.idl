@@ -19,12 +19,12 @@
  
 #include "gazebo_msgs/msg/ModelState.idl" 
  
-module gazebo_msgs { module srv { module dds_ { 
- 
-struct SetModelState_Request_ { 
-    gazebo_msgs::msg::dds_::ModelState_ model_state; 
-}; 
- 
-}; }; };  // module dds_::srv::gazebo_msgs 
+module gazebo_msgs { 
+    module srv {  
+        struct SetModelState_Request { 
+            gazebo_msgs::msg::ModelState model_state; 
+        }; 
+    }; 
+};
 
 #endif  // __gazebo_msgs__srv__SetModelState_Request__idl

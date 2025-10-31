@@ -21,11 +21,9 @@
 
 module tf2_msgs {
   module msg {
-    module dds_ {
-      @appendable struct TFMessage_ {
-        sequence<geometry_msgs::msg::dds_::TransformStamped_> transforms;
+      @appendable struct TFMessage {
+        sequence<geometry_msgs::msg::TransformStamped> transforms;
       };
-    };
   };
 };
 

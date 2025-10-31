@@ -21,11 +21,9 @@
 
 module test_msgs {
   module msg {
-    module dds_ {
-      @appendable struct Nested_ {
-        test_msgs::msg::dds_::BasicTypes_ basic_types_value;
+      @appendable struct Nested {
+        test_msgs::msg::BasicTypes basic_types_value;
       };
-    };
   };
 };
 

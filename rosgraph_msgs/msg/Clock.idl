@@ -21,11 +21,9 @@
 
 module rosgraph_msgs {
   module msg {
-    module dds_ {
-      @appendable struct Clock_ {
-        builtin_interfaces::msg::dds_::Time_ clock;
+      @appendable struct Clock {
+        builtin_interfaces::msg::Time clock;
       };
-    };
   };
 };
 

@@ -21,11 +21,9 @@
 
 module rclcpp {
   module msg {
-    module dds_ {
-      @appendable struct MessageWithHeader_ {
-        rclcpp::msg::dds_::Header_ header;
+      @appendable struct MessageWithHeader {
+        rclcpp::msg::Header header;
       };
-    };
   };
 };
 

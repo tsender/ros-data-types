@@ -19,8 +19,7 @@
 
 module map_msgs {
   module msg {
-    module dds_ {
-      @appendable struct ProjectedMapInfo_ {
+      @appendable struct ProjectedMapInfo {
         string frame_id;
         double x;
         double y;
@@ -29,7 +28,6 @@ module map_msgs {
         double min_z;
         double max_z;
       };
-    };
   };
 };
 

@@ -9,24 +9,12 @@
 
 
 module lgsvl_msgs {
-
-module msg {
-
-module dds_ {
-
-
-struct Detection2DArray_ {
-std_msgs::msg::dds_::Header_ header;
-sequence<lgsvl_msgs::msg::dds_::Detection2D_> detections;
-
-
-};
-
-
-};  // module dds_
-
-};  // module msg
-
+    module msg {
+        struct Detection2DArray {
+        std_msgs::msg::Header header;
+        sequence<lgsvl_msgs::msg::Detection2D> detections;
+        };
+    };  // module msg
 };  // module lgsvl_msgs
 
 

@@ -22,33 +22,31 @@
 
 module visualization_msgs {
   module msg {
-    module dds_ {
       module InteractiveMarkerControl_Constants {
-        const octet INHERIT_ = 0;
-        const octet FIXED_ = 1;
-        const octet VIEW_FACING_ = 2;
-        const octet NONE_ = 0;
-        const octet MENU_ = 1;
-        const octet BUTTON_ = 2;
-        const octet MOVE_AXIS_ = 3;
-        const octet MOVE_PLANE_ = 4;
-        const octet ROTATE_AXIS_ = 5;
-        const octet MOVE_ROTATE_ = 6;
-        const octet MOVE_3D_ = 7;
-        const octet ROTATE_3D_ = 8;
-        const octet MOVE_ROTATE_3D_ = 9;
+        const octet INHERIT = 0;
+        const octet FIXED = 1;
+        const octet VIEW_FACING = 2;
+        const octet NONE = 0;
+        const octet MENU = 1;
+        const octet BUTTON = 2;
+        const octet MOVE_AXIS = 3;
+        const octet MOVE_PLANE = 4;
+        const octet ROTATE_AXIS = 5;
+        const octet MOVE_ROTATE = 6;
+        const octet MOVE_3D = 7;
+        const octet ROTATE_3D = 8;
+        const octet MOVE_ROTATE_3D = 9;
       };
-      @appendable struct InteractiveMarkerControl_ {
+      @appendable struct InteractiveMarkerControl {
         string name;
-        geometry_msgs::msg::dds_::Quaternion_ orientation;
+        geometry_msgs::msg::Quaternion orientation;
         octet orientation_mode;
         octet interaction_mode;
         boolean always_visible;
-        sequence<visualization_msgs::msg::dds_::Marker_> markers;
+        sequence<visualization_msgs::msg::Marker> markers;
         boolean independent_marker_orientation;
         string description;
       };
-    };
   };
 };
 

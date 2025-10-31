@@ -21,17 +21,15 @@
 
 module composition_interfaces {
   module srv {
-    module dds_ {
-      @appendable struct LoadNode_Request_ {
-        string package_name;
-        string plugin_name;
-        string node_name;
-        string node_namespace;
-        octet log_level;
-        sequence<string> remap_rules;
-        sequence<rcl_interfaces::msg::dds_::Parameter_> parameters;
-        sequence<rcl_interfaces::msg::dds_::Parameter_> extra_arguments;
-      };
+    @appendable struct LoadNode_Request {
+      string package_name;
+      string plugin_name;
+      string node_name;
+      string node_namespace;
+      octet log_level;
+      sequence<string> remap_rules;
+      sequence<rcl_interfaces::msg::Parameter> parameters;
+      sequence<rcl_interfaces::msg::Parameter> extra_arguments;
     };
   };
 };

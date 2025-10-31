@@ -19,19 +19,17 @@
 
 module statistics_msgs {
   module msg {
-    module dds_ {
       module StatisticDataType_Constants {
-        const octet STATISTICS_DATA_TYPE_UNINITIALIZED_ = 0;
-        const octet STATISTICS_DATA_TYPE_AVERAGE_ = 1;
-        const octet STATISTICS_DATA_TYPE_MINIMUM_ = 2;
-        const octet STATISTICS_DATA_TYPE_MAXIMUM_ = 3;
-        const octet STATISTICS_DATA_TYPE_STDDEV_ = 4;
-        const octet STATISTICS_DATA_TYPE_SAMPLE_COUNT_ = 5;
+        const octet STATISTICS_DATA_TYPE_UNINITIALIZED = 0;
+        const octet STATISTICS_DATA_TYPE_AVERAGE = 1;
+        const octet STATISTICS_DATA_TYPE_MINIMUM = 2;
+        const octet STATISTICS_DATA_TYPE_MAXIMUM = 3;
+        const octet STATISTICS_DATA_TYPE_STDDEV = 4;
+        const octet STATISTICS_DATA_TYPE_SAMPLE_COUNT = 5;
       };
-      @appendable struct StatisticDataType_ {
+      @appendable struct StatisticDataType {
         octet structure_needs_at_least_one_member;
       };
-    };
   };
 };
 

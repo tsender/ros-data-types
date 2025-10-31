@@ -22,13 +22,11 @@
 
 module sensor_msgs {
   module msg {
-    module dds_ {
-      @appendable struct TimeReference_ {
-        std_msgs::msg::dds_::Header_ header;
-        builtin_interfaces::msg::dds_::Time_ time_ref;
+      @appendable struct TimeReference {
+        std_msgs::msg::Header header;
+        builtin_interfaces::msg::Time time_ref;
         string source;
       };
-    };
   };
 };
 

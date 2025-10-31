@@ -19,14 +19,14 @@
  
 #include "gazebo_msgs/msg/LinkState.idl" 
  
-module gazebo_msgs { module srv { module dds_ { 
- 
-struct GetLinkState_Response_ { 
-    gazebo_msgs::msg::dds_::LinkState_ link_state; 
-    boolean success; 
-    string status_message; 
-}; 
- 
-}; }; };  // module dds_::srv::gazebo_msgs 
+module gazebo_msgs { 
+    module srv {
+        struct GetLinkState_Response { 
+            gazebo_msgs::msg::LinkState link_state; 
+            boolean success; 
+            string status_message; 
+        }; 
+    }; 
+};
 
 #endif  // __gazebo_msgs__srv__GetLinkState_Response__idl

@@ -21,11 +21,9 @@
 
 module map_msgs {
   module srv {
-    module dds_ {
-      @appendable struct GetPointMap_Response_ {
-        sensor_msgs::msg::dds_::PointCloud2_ map;
+      @appendable struct GetPointMap_Response {
+        sensor_msgs::msg::PointCloud2 map;
       };
-    };
   };
 };
 

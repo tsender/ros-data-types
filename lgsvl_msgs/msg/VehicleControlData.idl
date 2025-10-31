@@ -8,35 +8,24 @@
 
 
 module lgsvl_msgs {
+    module msg {
+        module VehicleControlData_Constants {
+        const octet GEAR_NEUTRAL = 0;
+        const octet GEAR_DRIVE = 1;
+        const octet GEAR_REVERSE = 2;
+        const octet GEAR_PARKING = 3;
+        const octet GEAR_LOW = 4;
+        };
 
-module msg {
-
-module dds_ {
-
-module VehicleControlData_Constants {
-const octet GEAR_NEUTRAL = 0;
-const octet GEAR_DRIVE = 1;
-const octet GEAR_REVERSE = 2;
-const octet GEAR_PARKING = 3;
-const octet GEAR_LOW = 4;
-
-};
-
-struct VehicleControlData_ {
-std_msgs::msg::dds_::Header_ header;
-float acceleration_pct;
-float braking_pct;
-float target_wheel_angle;
-float target_wheel_angular_rate;
-octet target_gear;
-
-};
-
-
-};  // module dds_
-
-};  // module msg
-
+        struct VehicleControlData {
+        std_msgs::msg::Header header;
+        float acceleration_pct;
+        float braking_pct;
+        float target_wheel_angle;
+        float target_wheel_angular_rate;
+        octet target_gear;
+        };
+    };  // module msg
 };  // module lgsvl_msgs
 
 

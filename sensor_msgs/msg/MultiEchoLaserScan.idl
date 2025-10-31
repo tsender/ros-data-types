@@ -22,9 +22,8 @@
 
 module sensor_msgs {
   module msg {
-    module dds_ {
-      @appendable struct MultiEchoLaserScan_ {
-        std_msgs::msg::dds_::Header_ header;
+      @appendable struct MultiEchoLaserScan {
+        std_msgs::msg::Header header;
         float angle_min;
         float angle_max;
         float angle_increment;
@@ -32,10 +31,9 @@ module sensor_msgs {
         float scan_time;
         float range_min;
         float range_max;
-        sequence<sensor_msgs::msg::dds_::LaserEcho_> ranges;
-        sequence<sensor_msgs::msg::dds_::LaserEcho_> intensities;
+        sequence<sensor_msgs::msg::LaserEcho> ranges;
+        sequence<sensor_msgs::msg::LaserEcho> intensities;
       };
-    };
   };
 };
 

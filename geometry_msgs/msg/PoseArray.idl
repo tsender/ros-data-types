@@ -22,12 +22,10 @@
 
 module geometry_msgs {
   module msg {
-    module dds_ {
-      @appendable struct PoseArray_ {
-        std_msgs::msg::dds_::Header_ header;
-        sequence<geometry_msgs::msg::dds_::Pose_> poses;
+      @appendable struct PoseArray {
+        std_msgs::msg::Header header;
+        sequence<geometry_msgs::msg::Pose> poses;
       };
-    };
   };
 };
 

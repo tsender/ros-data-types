@@ -19,18 +19,16 @@
 
 module sensor_msgs {
   module msg {
-    module dds_ {
       module JoyFeedback_Constants {
-        const octet TYPE_LED_ = 0;
-        const octet TYPE_RUMBLE_ = 1;
-        const octet TYPE_BUZZER_ = 2;
+        const octet TYPE_LED = 0;
+        const octet TYPE_RUMBLE = 1;
+        const octet TYPE_BUZZER = 2;
       };
-      @appendable struct JoyFeedback_ {
+      @appendable struct JoyFeedback {
         octet type;
         octet id;
         float intensity;
       };
-    };
   };
 };
 

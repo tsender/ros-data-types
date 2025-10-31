@@ -8,23 +8,12 @@
 
 
 module lgsvl_msgs {
-
-module msg {
-
-module dds_ {
-
-
-struct Ultrasonic_ {
-std_msgs::msg::dds_::Header_ header;
-float minimum_distance;
-
-};
-
-
-};  // module dds_
-
-};  // module msg
-
+    module msg {
+        struct Ultrasonic {
+        std_msgs::msg::Header header;
+        float minimum_distance;
+        };
+    };  // module msg
 };  // module lgsvl_msgs
 
 

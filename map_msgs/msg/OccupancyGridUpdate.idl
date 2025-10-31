@@ -21,16 +21,14 @@
 
 module map_msgs {
   module msg {
-    module dds_ {
-      @appendable struct OccupancyGridUpdate_ {
-        std_msgs::msg::dds_::Header_ header;
+      @appendable struct OccupancyGridUpdate {
+        std_msgs::msg::Header header;
         int32 x;
         int32 y;
         uint32 width;
         uint32 height;
         sequence<octet> data;
       };
-    };
   };
 };
 

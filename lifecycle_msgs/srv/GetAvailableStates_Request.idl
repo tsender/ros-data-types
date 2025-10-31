@@ -19,11 +19,9 @@
 
 module lifecycle_msgs {
   module srv {
-    module dds_ {
-      @appendable struct GetAvailableStates_Request_ {
+      @appendable struct GetAvailableStates_Request {
         octet structure_needs_at_least_one_member;
       };
-    };
   };
 };
 

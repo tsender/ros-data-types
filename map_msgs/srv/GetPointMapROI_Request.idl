@@ -19,8 +19,7 @@
 
 module map_msgs {
   module srv {
-    module dds_ {
-      @appendable struct GetPointMapROI_Request_ {
+      @appendable struct GetPointMapROI_Request {
         double x;
         double y;
         double z;
@@ -29,7 +28,6 @@ module map_msgs {
         double l_y;
         double l_z;
       };
-    };
   };
 };
 

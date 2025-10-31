@@ -23,18 +23,16 @@
 
 module stereo_msgs {
   module msg {
-    module dds_ {
-      @appendable struct DisparityImage_ {
-        std_msgs::msg::dds_::Header_ header;
-        sensor_msgs::msg::dds_::Image_ image;
+      @appendable struct DisparityImage {
+        std_msgs::msg::Header header;
+        sensor_msgs::msg::Image image;
         float f;
         float t;
-        sensor_msgs::msg::dds_::RegionOfInterest_ valid_window;
+        sensor_msgs::msg::RegionOfInterest valid_window;
         float min_disparity;
         float max_disparity;
         float delta_d;
       };
-    };
   };
 };
 

@@ -21,11 +21,9 @@
 
 module rcl_interfaces {
   module srv {
-    module dds_ {
-      @appendable struct SetParameters_Response_ {
-        sequence<rcl_interfaces::msg::dds_::SetParametersResult_> results;
+      @appendable struct SetParameters_Response {
+        sequence<rcl_interfaces::msg::SetParametersResult> results;
       };
-    };
   };
 };
 

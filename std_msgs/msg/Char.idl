@@ -19,11 +19,9 @@
 
 module std_msgs {
   module msg {
-    module dds_ {
-      @appendable struct Char_ {
+      @appendable struct Char {
         octet data;
       };
-    };
   };
 };
 

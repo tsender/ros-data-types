@@ -19,22 +19,20 @@
 
 module sensor_msgs {
   module msg {
-    module dds_ {
       module NavSatStatus_Constants {
-        const octet STATUS_NO_FIX_ = 255;
-        const octet STATUS_FIX_ = 0;
-        const octet STATUS_SBAS_FIX_ = 1;
-        const octet STATUS_GBAS_FIX_ = 2;
-        const uint16 SERVICE_GPS_ = 1;
-        const uint16 SERVICE_GLONASS_ = 2;
-        const uint16 SERVICE_COMPASS_ = 4;
-        const uint16 SERVICE_GALILEO_ = 8;
+        const octet STATUS_NO_FIX = 255;
+        const octet STATUS_FIX = 0;
+        const octet STATUS_SBAS_FIX = 1;
+        const octet STATUS_GBAS_FIX = 2;
+        const uint16 SERVICE_GPS = 1;
+        const uint16 SERVICE_GLONASS = 2;
+        const uint16 SERVICE_COMPASS = 4;
+        const uint16 SERVICE_GALILEO = 8;
       };
-      @appendable struct NavSatStatus_ {
+      @appendable struct NavSatStatus {
         octet status;
         uint16 service;
       };
-    };
   };
 };
 

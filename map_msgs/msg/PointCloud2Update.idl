@@ -22,17 +22,15 @@
 
 module map_msgs {
   module msg {
-    module dds_ {
       module PointCloud2Update_Constants {
-        const uint32 ADD_ = 0;
-        const uint32 DELETE_ = 1;
+        const uint32 ADD = 0;
+        const uint32 DELETE = 1;
       };
-      @appendable struct PointCloud2Update_ {
-        std_msgs::msg::dds_::Header_ header;
+      @appendable struct PointCloud2Update {
+        std_msgs::msg::Header header;
         uint32 type;
-        sensor_msgs::msg::dds_::PointCloud2_ points;
+        sensor_msgs::msg::PointCloud2 points;
       };
-    };
   };
 };
 

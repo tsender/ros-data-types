@@ -22,17 +22,15 @@
 
 module tf2_msgs {
   module action {
-    module dds_ {
-      @appendable struct LookupTransform_Goal_ {
+      @appendable struct LookupTransform_Goal {
         string target_frame;
         string source_frame;
-        builtin_interfaces::msg::dds_::Time_ source_time;
-        builtin_interfaces::msg::dds_::Duration_ timeout;
-        builtin_interfaces::msg::dds_::Time_ target_time;
+        builtin_interfaces::msg::Time source_time;
+        builtin_interfaces::msg::Duration timeout;
+        builtin_interfaces::msg::Time target_time;
         string fixed_frame;
         boolean advanced;
       };
-    };
   };
 };
 

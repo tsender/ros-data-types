@@ -21,11 +21,9 @@
 
 module nav_msgs {
   module srv {
-    module dds_ {
-      @appendable struct GetMap_Response_ {
-        nav_msgs::msg::dds_::OccupancyGrid_ map;
+      @appendable struct GetMap_Response {
+        nav_msgs::msg::OccupancyGrid map;
       };
-    };
   };
 };
 

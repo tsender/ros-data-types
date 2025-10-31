@@ -21,11 +21,9 @@
 
 module move_base_msgs {
   module action {
-    module dds_ {
-      @appendable struct MoveBase_Goal_ {
-        geometry_msgs::msg::dds_::PoseStamped_ target_pose;
+      @appendable struct MoveBase_Goal {
+        geometry_msgs::msg::PoseStamped target_pose;
       };
-    };
   };
 };
 

@@ -21,13 +21,11 @@
 
 module sensor_msgs {
   module msg {
-    module dds_ {
-      @appendable struct Joy_ {
-        std_msgs::msg::dds_::Header_ header;
+      @appendable struct Joy {
+        std_msgs::msg::Header header;
         sequence<float> axes;
         sequence<int32> buttons;
       };
-    };
   };
 };
 

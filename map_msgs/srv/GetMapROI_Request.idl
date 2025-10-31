@@ -19,14 +19,12 @@
 
 module map_msgs {
   module srv {
-    module dds_ {
-      @appendable struct GetMapROI_Request_ {
+      @appendable struct GetMapROI_Request {
         double x;
         double y;
         double l_x;
         double l_y;
       };
-    };
   };
 };
 

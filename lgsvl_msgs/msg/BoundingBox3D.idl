@@ -9,23 +9,12 @@
 
 
 module lgsvl_msgs {
-
-module msg {
-
-module dds_ {
-
-
-struct BoundingBox3D_ {
-geometry_msgs::msg::dds_::Pose_ position;
-geometry_msgs::msg::dds_::Vector3_ size;
-
-};
-
-
-};  // module dds_
-
-};  // module msg
-
+    module msg {
+        struct BoundingBox3D {
+        geometry_msgs::msg::Pose position;
+        geometry_msgs::msg::Vector3 size;
+        };
+    };  // module msg
 };  // module lgsvl_msgs
 
 

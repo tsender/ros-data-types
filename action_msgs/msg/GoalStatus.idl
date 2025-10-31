@@ -21,20 +21,18 @@
 
 module action_msgs {
   module msg {
-    module dds_ {
-      module GoalStatus_Constants {
-        const octet STATUS_UNKNOWN_ = 0;
-        const octet STATUS_ACCEPTED_ = 1;
-        const octet STATUS_EXECUTING_ = 2;
-        const octet STATUS_CANCELING_ = 3;
-        const octet STATUS_SUCCEEDED_ = 4;
-        const octet STATUS_CANCELED_ = 5;
-        const octet STATUS_ABORTED_ = 6;
-      };
-      @appendable struct GoalStatus_ {
-        action_msgs::msg::dds_::GoalInfo_ goal_info;
-        octet status;
-      };
+    module GoalStatus_Constants {
+      const octet STATUS_UNKNOWN = 0;
+      const octet STATUS_ACCEPTED = 1;
+      const octet STATUS_EXECUTING = 2;
+      const octet STATUS_CANCELING = 3;
+      const octet STATUS_SUCCEEDED = 4;
+      const octet STATUS_CANCELED = 5;
+      const octet STATUS_ABORTED = 6;
+    };
+    @appendable struct GoalStatus {
+      action_msgs::msg::GoalInfo goal_info;
+      octet status;
     };
   };
 };

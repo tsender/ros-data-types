@@ -19,11 +19,9 @@
 
 module rcl_interfaces {
   module srv {
-    module dds_ {
-      @appendable struct DescribeParameters_Request_ {
+      @appendable struct DescribeParameters_Request {
         sequence<string> names;
       };
-    };
   };
 };
 

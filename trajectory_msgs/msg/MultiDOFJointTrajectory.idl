@@ -22,13 +22,11 @@
 
 module trajectory_msgs {
   module msg {
-    module dds_ {
-      @appendable struct MultiDOFJointTrajectory_ {
-        std_msgs::msg::dds_::Header_ header;
+      @appendable struct MultiDOFJointTrajectory {
+        std_msgs::msg::Header header;
         sequence<string> joint_names;
-        sequence<trajectory_msgs::msg::dds_::MultiDOFJointTrajectoryPoint_> points;
+        sequence<trajectory_msgs::msg::MultiDOFJointTrajectoryPoint> points;
       };
-    };
   };
 };
 

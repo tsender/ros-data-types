@@ -19,11 +19,9 @@
 
 module rqt_py_common {
   module srv {
-    module dds_ {
-      @appendable struct AddTwoInts_Response_ {
+      @appendable struct AddTwoInts_Response {
         int64 sum;
       };
-    };
   };
 };
 

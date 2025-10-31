@@ -19,12 +19,10 @@
 
 module logging_demo {
   module srv {
-    module dds_ {
-      @appendable struct ConfigLogger_Request_ {
+      @appendable struct ConfigLogger_Request {
         string logger_name;
         string level;
       };
-    };
   };
 };
 

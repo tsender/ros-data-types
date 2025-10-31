@@ -19,15 +19,13 @@
 
 module turtlesim {
   module srv {
-    module dds_ {
-      @appendable struct SetPen_Request_ {
+      @appendable struct SetPen_Request {
         octet r;
         octet g;
         octet b;
         octet width;
         octet off;
       };
-    };
   };
 };
 

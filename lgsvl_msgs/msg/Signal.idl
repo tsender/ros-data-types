@@ -9,26 +9,15 @@
 
 
 module lgsvl_msgs {
-
-module msg {
-
-module dds_ {
-
-
-struct Signal_ {
-std_msgs::msg::dds_::Header_ header;
-unsigned long id;
-string label;
-float score;
-lgsvl_msgs::msg::dds_::BoundingBox3D_ bbox;
-
-};
-
-
-};  // module dds_
-
-};  // module msg
-
+    module msg {
+        struct Signal {
+        std_msgs::msg::Header header;
+        unsigned long id;
+        string label;
+        float score;
+        lgsvl_msgs::msg::BoundingBox3D bbox;
+        };
+    };  // module msg
 };  // module lgsvl_msgs
 
 

@@ -7,25 +7,14 @@
 
 
 module lgsvl_msgs {
-
-module msg {
-
-module dds_ {
-
-
-struct BoundingBox2D_ {
-float x;
-float y;
-float width;
-float height;
-
-};
-
-
-};  // module dds_
-
-};  // module msg
-
+    module msg {
+        struct BoundingBox2D {
+        float x;
+        float y;
+        float width;
+        float height;
+        };
+    };  // module msg
 };  // module lgsvl_msgs
 
 

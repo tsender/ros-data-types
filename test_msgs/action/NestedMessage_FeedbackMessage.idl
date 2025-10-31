@@ -22,12 +22,10 @@
 
 module test_msgs {
   module action {
-    module dds_ {
-      @appendable struct NestedMessage_FeedbackMessage_ {
-        unique_identifier_msgs::msg::dds_::UUID_ goal_id;
-        test_msgs::action::dds_::NestedMessage_Feedback_ feedback;
+      @appendable struct NestedMessage_FeedbackMessage {
+        unique_identifier_msgs::msg::UUID goal_id;
+        test_msgs::action::NestedMessage_Feedback feedback;
       };
-    };
   };
 };
 

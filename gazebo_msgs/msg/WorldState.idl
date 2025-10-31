@@ -22,16 +22,16 @@
 #include "geometry_msgs/msg/Twist.idl" 
 #include "geometry_msgs/msg/Wrench.idl" 
  
-module gazebo_msgs { module msg { module dds_ {
- 
-struct WorldState_ { 
-    std_msgs::msg::dds_::Header_ header; 
-    sequence<string> name; 
-    sequence<geometry_msgs::msg::dds_::Pose_> pose; 
-    sequence<geometry_msgs::msg::dds_::Twist_> twist; 
-    sequence<geometry_msgs::msg::dds_::Wrench_> wrench; 
-}; 
- 
-}; }; };  // module dds_::msg::gazebo_msgs 
+module gazebo_msgs { 
+    module msg {
+        struct WorldState { 
+            std_msgs::msg::Header header; 
+            sequence<string> name; 
+            sequence<geometry_msgs::msg::Pose> pose; 
+            sequence<geometry_msgs::msg::Twist> twist; 
+            sequence<geometry_msgs::msg::Wrench> wrench; 
+        }; 
+    }; 
+};
 
 #endif  // __gazebo_msgs__msg__WorldState__idl

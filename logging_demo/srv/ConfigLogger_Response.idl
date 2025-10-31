@@ -19,11 +19,9 @@
 
 module logging_demo {
   module srv {
-    module dds_ {
-      @appendable struct ConfigLogger_Response_ {
+      @appendable struct ConfigLogger_Response {
         boolean success;
       };
-    };
   };
 };
 

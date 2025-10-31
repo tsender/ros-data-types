@@ -23,13 +23,11 @@
 
 module test_msgs {
   module action {
-    module dds_ {
-      @appendable struct NestedMessage_Goal_ {
-        test_msgs::msg::dds_::Builtins_ nested_field_no_pkg;
-        test_msgs::msg::dds_::BasicTypes_ nested_field;
-        builtin_interfaces::msg::dds_::Time_ nested_different_pkg;
+      @appendable struct NestedMessage_Goal {
+        test_msgs::msg::Builtins nested_field_no_pkg;
+        test_msgs::msg::BasicTypes nested_field;
+        builtin_interfaces::msg::Time nested_different_pkg;
       };
-    };
   };
 };
 

@@ -19,13 +19,11 @@
 
 module geometry_msgs {
   module msg {
-    module dds_ {
-      @appendable struct Point32_ {
+      @appendable struct Point32 {
         float x;
         float y;
         float z;
       };
-    };
   };
 };
 

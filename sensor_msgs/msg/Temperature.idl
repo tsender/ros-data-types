@@ -21,13 +21,11 @@
 
 module sensor_msgs {
   module msg {
-    module dds_ {
-      @appendable struct Temperature_ {
-        std_msgs::msg::dds_::Header_ header;
+      @appendable struct Temperature {
+        std_msgs::msg::Header header;
         double temperature;
         double variance;
       };
-    };
   };
 };
 

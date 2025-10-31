@@ -21,32 +21,31 @@
 
 module sensor_msgs {
   module msg {
-    module dds_ {
       module BatteryState_Constants {
-        const octet POWER_SUPPLY_STATUS_UNKNOWN_ = 0;
-        const octet POWER_SUPPLY_STATUS_CHARGING_ = 1;
-        const octet POWER_SUPPLY_STATUS_DISCHARGING_ = 2;
-        const octet POWER_SUPPLY_STATUS_NOT_CHARGING_ = 3;
-        const octet POWER_SUPPLY_STATUS_FULL_ = 4;
-        const octet POWER_SUPPLY_HEALTH_UNKNOWN_ = 0;
-        const octet POWER_SUPPLY_HEALTH_GOOD_ = 1;
-        const octet POWER_SUPPLY_HEALTH_OVERHEAT_ = 2;
-        const octet POWER_SUPPLY_HEALTH_DEAD_ = 3;
-        const octet POWER_SUPPLY_HEALTH_OVERVOLTAGE_ = 4;
-        const octet POWER_SUPPLY_HEALTH_UNSPEC_FAILURE_ = 5;
-        const octet POWER_SUPPLY_HEALTH_COLD_ = 6;
-        const octet POWER_SUPPLY_HEALTH_WATCHDOG_TIMER_EXPIRE_ = 7;
-        const octet POWER_SUPPLY_HEALTH_SAFETY_TIMER_EXPIRE_ = 8;
-        const octet POWER_SUPPLY_TECHNOLOGY_UNKNOWN_ = 0;
-        const octet POWER_SUPPLY_TECHNOLOGY_NIMH_ = 1;
-        const octet POWER_SUPPLY_TECHNOLOGY_LION_ = 2;
-        const octet POWER_SUPPLY_TECHNOLOGY_LIPO_ = 3;
-        const octet POWER_SUPPLY_TECHNOLOGY_LIFE_ = 4;
-        const octet POWER_SUPPLY_TECHNOLOGY_NICD_ = 5;
-        const octet POWER_SUPPLY_TECHNOLOGY_LIMN_ = 6;
+        const octet POWER_SUPPLY_STATUS_UNKNOWN = 0;
+        const octet POWER_SUPPLY_STATUS_CHARGING = 1;
+        const octet POWER_SUPPLY_STATUS_DISCHARGING = 2;
+        const octet POWER_SUPPLY_STATUS_NOT_CHARGING = 3;
+        const octet POWER_SUPPLY_STATUS_FULL = 4;
+        const octet POWER_SUPPLY_HEALTH_UNKNOWN = 0;
+        const octet POWER_SUPPLY_HEALTH_GOOD = 1;
+        const octet POWER_SUPPLY_HEALTH_OVERHEAT = 2;
+        const octet POWER_SUPPLY_HEALTH_DEAD = 3;
+        const octet POWER_SUPPLY_HEALTH_OVERVOLTAGE = 4;
+        const octet POWER_SUPPLY_HEALTH_UNSPEC_FAILURE = 5;
+        const octet POWER_SUPPLY_HEALTH_COLD = 6;
+        const octet POWER_SUPPLY_HEALTH_WATCHDOG_TIMER_EXPIRE = 7;
+        const octet POWER_SUPPLY_HEALTH_SAFETY_TIMER_EXPIRE = 8;
+        const octet POWER_SUPPLY_TECHNOLOGY_UNKNOWN = 0;
+        const octet POWER_SUPPLY_TECHNOLOGY_NIMH = 1;
+        const octet POWER_SUPPLY_TECHNOLOGY_LION = 2;
+        const octet POWER_SUPPLY_TECHNOLOGY_LIPO = 3;
+        const octet POWER_SUPPLY_TECHNOLOGY_LIFE = 4;
+        const octet POWER_SUPPLY_TECHNOLOGY_NICD = 5;
+        const octet POWER_SUPPLY_TECHNOLOGY_LIMN = 6;
       };
-      @appendable struct BatteryState_ {
-        std_msgs::msg::dds_::Header_ header;
+      @appendable struct BatteryState {
+        std_msgs::msg::Header header;
         float voltage;
         float temperature;
         float current;
@@ -63,7 +62,6 @@ module sensor_msgs {
         string location;
         string serial_number;
       };
-    };
   };
 };
 

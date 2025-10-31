@@ -21,13 +21,11 @@
 
 module nav_msgs {
   module srv {
-    module dds_ {
-      @appendable struct GetPlan_Request_ {
-        geometry_msgs::msg::dds_::PoseStamped_ start;
-        geometry_msgs::msg::dds_::PoseStamped_ goal;
+      @appendable struct GetPlan_Request {
+        geometry_msgs::msg::PoseStamped start;
+        geometry_msgs::msg::PoseStamped goal;
         float tolerance;
       };
-    };
   };
 };
 

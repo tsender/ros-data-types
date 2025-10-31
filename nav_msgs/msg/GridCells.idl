@@ -22,14 +22,12 @@
 
 module nav_msgs {
   module msg {
-    module dds_ {
-      @appendable struct GridCells_ {
-        std_msgs::msg::dds_::Header_ header;
+      @appendable struct GridCells {
+        std_msgs::msg::Header header;
         float cell_width;
         float cell_height;
-        sequence<geometry_msgs::msg::dds_::Point_> cells;
+        sequence<geometry_msgs::msg::Point> cells;
       };
-    };
   };
 };
 

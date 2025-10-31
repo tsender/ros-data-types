@@ -21,11 +21,9 @@
 
 module geometry_msgs {
   module msg {
-    module dds_ {
-      @appendable struct AccelWithCovariance_ {
-        geometry_msgs::msg::dds_::Accel_ accel;
-        double covariance[36];
-      };
+    @appendable struct AccelWithCovariance {
+      geometry_msgs::msg::Accel accel;
+      double covariance[36];
     };
   };
 };

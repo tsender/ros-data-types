@@ -22,12 +22,10 @@
 
 module test_msgs {
   module msg {
-    module dds_ {
-      @appendable struct Builtins_ {
-        builtin_interfaces::msg::dds_::Duration_ duration_value;
-        builtin_interfaces::msg::dds_::Time_ time_value;
+      @appendable struct Builtins {
+        builtin_interfaces::msg::Duration duration_value;
+        builtin_interfaces::msg::Time time_value;
       };
-    };
   };
 };
 

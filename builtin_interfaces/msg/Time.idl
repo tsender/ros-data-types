@@ -17,13 +17,13 @@
 #ifndef __builtin_interfaces__msg__Time__idl 
 #define __builtin_interfaces__msg__Time__idl 
  
-module builtin_interfaces { module msg { module dds_ { 
-
-  @appendable struct Time_ { 
-    int32 sec; 
-    uint32 nanosec; 
-  }; 
- 
-}; }; };  // module dds_::msg::builtin_interfaces 
+module builtin_interfaces { 
+  module msg { 
+    @appendable struct Time { 
+      int32 sec; 
+      uint32 nanosec; 
+    }; 
+  };
+};
  
 #endif  // __builtin_interfaces__msg__Time__idl 

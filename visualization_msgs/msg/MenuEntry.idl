@@ -19,20 +19,18 @@
 
 module visualization_msgs {
   module msg {
-    module dds_ {
       module MenuEntry_Constants {
-        const octet FEEDBACK_ = 0;
-        const octet ROSRUN_ = 1;
-        const octet ROSLAUNCH_ = 2;
+        const octet FEEDBACK = 0;
+        const octet ROSRUN = 1;
+        const octet ROSLAUNCH = 2;
       };
-      @appendable struct MenuEntry_ {
+      @appendable struct MenuEntry {
         uint32 id;
         uint32 parent_id;
         string title;
         string command;
         octet command_type;
       };
-    };
   };
 };
 

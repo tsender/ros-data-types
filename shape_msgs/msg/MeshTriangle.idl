@@ -19,11 +19,9 @@
 
 module shape_msgs {
   module msg {
-    module dds_ {
-      @appendable struct MeshTriangle_ {
+      @appendable struct MeshTriangle {
         uint32 vertex_indices[3];
       };
-    };
   };
 };
 

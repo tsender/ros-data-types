@@ -22,23 +22,21 @@
 
 module sensor_msgs {
   module msg {
-    module dds_ {
       module NavSatFix_Constants {
-        const octet COVARIANCE_TYPE_UNKNOWN_ = 0;
-        const octet COVARIANCE_TYPE_APPROXIMATED_ = 1;
-        const octet COVARIANCE_TYPE_DIAGONAL_KNOWN_ = 2;
-        const octet COVARIANCE_TYPE_KNOWN_ = 3;
+        const octet COVARIANCE_TYPE_UNKNOWN = 0;
+        const octet COVARIANCE_TYPE_APPROXIMATED = 1;
+        const octet COVARIANCE_TYPE_DIAGONAL_KNOWN = 2;
+        const octet COVARIANCE_TYPE_KNOWN = 3;
       };
-      @appendable struct NavSatFix_ {
-        std_msgs::msg::dds_::Header_ header;
-        sensor_msgs::msg::dds_::NavSatStatus_ status;
+      @appendable struct NavSatFix {
+        std_msgs::msg::Header header;
+        sensor_msgs::msg::NavSatStatus status;
         double latitude;
         double longitude;
         double altitude;
         double position_covariance[9];
         octet position_covariance_type;
       };
-    };
   };
 };
 

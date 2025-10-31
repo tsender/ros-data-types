@@ -24,15 +24,13 @@
 
 module sensor_msgs {
   module msg {
-    module dds_ {
-      @appendable struct MultiDOFJointState_ {
-        std_msgs::msg::dds_::Header_ header;
+      @appendable struct MultiDOFJointState {
+        std_msgs::msg::Header header;
         sequence<string> joint_names;
-        sequence<geometry_msgs::msg::dds_::Transform_> transforms;
-        sequence<geometry_msgs::msg::dds_::Twist_> twist;
-        sequence<geometry_msgs::msg::dds_::Wrench_> wrench;
+        sequence<geometry_msgs::msg::Transform> transforms;
+        sequence<geometry_msgs::msg::Twist> twist;
+        sequence<geometry_msgs::msg::Wrench> wrench;
       };
-    };
   };
 };
 

@@ -22,12 +22,10 @@
 
 module geometry_msgs {
   module msg {
-    module dds_ {
-      @appendable struct TwistStamped_ {
-        std_msgs::msg::dds_::Header_ header;
-        geometry_msgs::msg::dds_::Twist_ twist;
+      @appendable struct TwistStamped {
+        std_msgs::msg::Header header;
+        geometry_msgs::msg::Twist twist;
       };
-    };
   };
 };
 

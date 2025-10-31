@@ -21,9 +21,8 @@
 
 module sensor_msgs {
   module msg {
-    module dds_ {
-      @appendable struct Image_ {
-        std_msgs::msg::dds_::Header_ header;
+      @appendable struct Image {
+        std_msgs::msg::Header header;
         uint32 height;
         uint32 width;
         string encoding;
@@ -31,7 +30,6 @@ module sensor_msgs {
         uint32 step;
         sequence<octet> data;
       };
-    };
   };
 };
 

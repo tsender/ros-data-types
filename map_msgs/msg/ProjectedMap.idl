@@ -21,13 +21,11 @@
 
 module map_msgs {
   module msg {
-    module dds_ {
-      @appendable struct ProjectedMap_ {
-        nav_msgs::msg::dds_::OccupancyGrid_ map;
+      @appendable struct ProjectedMap {
+        nav_msgs::msg::OccupancyGrid map;
         double min_z;
         double max_z;
       };
-    };
   };
 };
 

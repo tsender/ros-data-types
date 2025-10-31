@@ -22,11 +22,9 @@
 
 module action_msgs {
   module msg {
-    module dds_ {
-      @appendable struct GoalInfo_ {
-        unique_identifier_msgs::msg::dds_::UUID_ goal_id;
-        builtin_interfaces::msg::dds_::Time_ stamp;
-      };
+    @appendable struct GoalInfo {
+      unique_identifier_msgs::msg::UUID goal_id;
+      builtin_interfaces::msg::Time stamp;
     };
   };
 };

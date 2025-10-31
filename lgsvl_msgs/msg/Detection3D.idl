@@ -10,27 +10,16 @@
 
 
 module lgsvl_msgs {
-
-module msg {
-
-module dds_ {
-
-
-struct Detection3D_ {
-std_msgs::msg::dds_::Header_ header;
-unsigned long id;
-string label;
-float score;
-lgsvl_msgs::msg::dds_::BoundingBox3D_ bbox;
-geometry_msgs::msg::dds_::Twist_ velocity;
-
-};
-
-
-};  // module dds_
-
-};  // module msg
-
+    module msg {
+        struct Detection3D {
+        std_msgs::msg::Header header;
+        unsigned long id;
+        string label;
+        float score;
+        lgsvl_msgs::msg::BoundingBox3D bbox;
+        geometry_msgs::msg::Twist velocity;
+        };
+    };  // module msg
 };  // module lgsvl_msgs
 
 

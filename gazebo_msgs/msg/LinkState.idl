@@ -20,15 +20,15 @@
 #include "geometry_msgs/msg/Pose.idl" 
 #include "geometry_msgs/msg/Twist.idl" 
  
-module gazebo_msgs { module msg { module dds_ {
- 
-struct LinkState_ { 
-    string link_name; 
-    geometry_msgs::msg::dds_::Pose_ pose; 
-    geometry_msgs::msg::dds_::Twist_ twist; 
-    string reference_frame; 
+module gazebo_msgs { 
+    module msg { 
+        struct LinkState { 
+            string link_name; 
+            geometry_msgs::msg::Pose pose; 
+            geometry_msgs::msg::Twist twist; 
+            string reference_frame; 
+        };
+    }; 
 }; 
- 
-}; }; };  // module dds_::msg::gazebo_msgs 
 
 #endif  // __gazebo_msgs__msg__LinkState__idl

@@ -22,13 +22,11 @@
 
 module nav_msgs {
   module msg {
-    module dds_ {
-      @appendable struct OccupancyGrid_ {
-        std_msgs::msg::dds_::Header_ header;
-        nav_msgs::msg::dds_::MapMetaData_ info;
+      @appendable struct OccupancyGrid {
+        std_msgs::msg::Header header;
+        nav_msgs::msg::MapMetaData info;
         sequence<octet> data;
       };
-    };
   };
 };
 

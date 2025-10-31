@@ -17,16 +17,16 @@
 #ifndef __gazebo_msgs__srv__GetWorldProperties_Response__idl
 #define __gazebo_msgs__srv__GetWorldProperties_Response__idl
  
-module gazebo_msgs { module srv { module dds_ { 
- 
-struct GetWorldProperties_Response_ { 
-    double sim_time; 
-    sequence<string> model_names; 
-    boolean rendering_enabled; 
-    boolean success; 
-    string status_message; 
-}; 
- 
-}; }; };  // module dds_::srv::gazebo_msgs 
+module gazebo_msgs { 
+    module srv {  
+        struct GetWorldProperties_Response { 
+            double sim_time; 
+            sequence<string> model_names; 
+            boolean rendering_enabled; 
+            boolean success; 
+            string status_message; 
+        }; 
+    }; 
+};
 
 #endif  // __gazebo_msgs__srv__GetWorldProperties_Response__idl

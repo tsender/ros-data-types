@@ -21,16 +21,16 @@
 #include "geometry_msgs/msg/Pose.idl" 
 #include "geometry_msgs/msg/Twist.idl" 
  
-module gazebo_msgs { module srv { module dds_ { 
- 
-struct GetModelState_Response_ { 
-    std_msgs::msg::dds_::Header_ header; 
-    geometry_msgs::msg::dds_::Pose_ pose; 
-    geometry_msgs::msg::dds_::Twist_ twist; 
-    boolean success; 
-    string status_message; 
-}; 
- 
-}; }; };  // module dds_::srv::gazebo_msgs 
+module gazebo_msgs { 
+    module srv {  
+        struct GetModelState_Response { 
+            std_msgs::msg::Header header; 
+            geometry_msgs::msg::Pose pose; 
+            geometry_msgs::msg::Twist twist; 
+            boolean success; 
+            string status_message; 
+        }; 
+    }; 
+};
 
 #endif  // __gazebo_msgs__srv__GetModelState_Response__idl

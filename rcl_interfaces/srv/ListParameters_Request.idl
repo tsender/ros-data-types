@@ -19,15 +19,13 @@
 
 module rcl_interfaces {
   module srv {
-    module dds_ {
       module ListParameters_Request_Constants {
-        const uint64 DEPTH_RECURSIVE_ = 0;
+        const uint64 DEPTH_RECURSIVE = 0;
       };
-      @appendable struct ListParameters_Request_ {
+      @appendable struct ListParameters_Request {
         sequence<string> prefixes;
         uint64 depth;
       };
-    };
   };
 };
 

@@ -23,8 +23,7 @@
 
 module rosidl_generator_py {
   module msg {
-    module dds_ {
-      @appendable struct BoundedSequences_ {
+      @appendable struct BoundedSequences {
         sequence<boolean,3> bool_values;
         sequence<octet,3> byte_values;
         sequence<octet,3> char_values;
@@ -39,9 +38,9 @@ module rosidl_generator_py {
         sequence<int64,3> int64_values;
         sequence<uint64,3> uint64_values;
         sequence<string,3 > string_values;
-        sequence<rosidl_generator_py::msg::dds_::BasicTypes_,3> basic_types_values;
-        sequence<rosidl_generator_py::msg::dds_::Constants_,3> constants_values;
-        sequence<rosidl_generator_py::msg::dds_::Defaults_,3> defaults_values;
+        sequence<rosidl_generator_py::msg::BasicTypes,3> basic_types_values;
+        sequence<rosidl_generator_py::msg::Constants,3> constants_values;
+        sequence<rosidl_generator_py::msg::Defaults,3> defaults_values;
         sequence<boolean,3> bool_values_default;
         sequence<octet,3> byte_values_default;
         sequence<octet,3> char_values_default;
@@ -58,7 +57,6 @@ module rosidl_generator_py {
         sequence<string,3 > string_values_default;
         int32 alignment_check;
       };
-    };
   };
 };
 

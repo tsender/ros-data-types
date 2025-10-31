@@ -17,12 +17,12 @@
 #ifndef __gazebo_msgs__srv__GetLinkProperties_Request__idl
 #define __gazebo_msgs__srv__GetLinkProperties_Request__idl
  
-module gazebo_msgs { module srv { module dds_ { 
- 
-struct GetLinkProperties_Request_ { 
-    string link_name; 
-}; 
- 
-}; }; };  // module dds_::srv::gazebo_msgs 
+module gazebo_msgs { 
+    module srv {  
+        struct GetLinkProperties_Request { 
+            string link_name; 
+        }; 
+    }; 
+};
 
 #endif  // __gazebo_msgs__srv__GetLinkProperties_Request__idl

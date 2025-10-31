@@ -22,15 +22,13 @@
 
 module rcl_interfaces {
   module msg {
-    module dds_ {
-      @appendable struct ParameterEvent_ {
-        builtin_interfaces::msg::dds_::Time_ stamp;
+      @appendable struct ParameterEvent {
+        builtin_interfaces::msg::Time stamp;
         string node;
-        sequence<rcl_interfaces::msg::dds_::Parameter_> new_parameters;
-        sequence<rcl_interfaces::msg::dds_::Parameter_> changed_parameters;
-        sequence<rcl_interfaces::msg::dds_::Parameter_> deleted_parameters;
+        sequence<rcl_interfaces::msg::Parameter> new_parameters;
+        sequence<rcl_interfaces::msg::Parameter> changed_parameters;
+        sequence<rcl_interfaces::msg::Parameter> deleted_parameters;
       };
-    };
   };
 };
 

@@ -17,15 +17,15 @@
 #ifndef __gazebo_msgs__srv__SetModelConfiguration_Request__idl
 #define __gazebo_msgs__srv__SetModelConfiguration_Request__idl
  
-module gazebo_msgs { module srv { module dds_ { 
- 
-struct SetModelConfiguration_Request_ { 
-    string model_name; 
-    string urdf_param_name; 
-    sequence<string> joint_names; 
-    sequence<double> joint_positions; 
-}; 
- 
-}; }; };  // module dds_::srv::gazebo_msgs 
+module gazebo_msgs { 
+    module srv {  
+        struct SetModelConfiguration_Request { 
+            string model_name; 
+            string urdf_param_name; 
+            sequence<string> joint_names; 
+            sequence<double> joint_positions; 
+        }; 
+    }; 
+};
 
 #endif  // __gazebo_msgs__srv__SetModelConfiguration_Request__idl

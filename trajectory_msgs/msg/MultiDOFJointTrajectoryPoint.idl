@@ -23,14 +23,12 @@
 
 module trajectory_msgs {
   module msg {
-    module dds_ {
-      @appendable struct MultiDOFJointTrajectoryPoint_ {
-        sequence<geometry_msgs::msg::dds_::Transform_> transforms;
-        sequence<geometry_msgs::msg::dds_::Twist_> velocities;
-        sequence<geometry_msgs::msg::dds_::Twist_> accelerations;
-        builtin_interfaces::msg::dds_::Duration_ time_from_start;
+      @appendable struct MultiDOFJointTrajectoryPoint {
+        sequence<geometry_msgs::msg::Transform> transforms;
+        sequence<geometry_msgs::msg::Twist> velocities;
+        sequence<geometry_msgs::msg::Twist> accelerations;
+        builtin_interfaces::msg::Duration time_from_start;
       };
-    };
   };
 };
 

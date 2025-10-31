@@ -20,15 +20,15 @@
 #include "geometry_msgs/msg/Vector3.idl" 
 #include "gazebo_msgs/msg/ODEPhysics.idl" 
  
-module gazebo_msgs { module srv { module dds_ { 
- 
-struct SetPhysicsProperties_Request_ { 
-    double time_step; 
-    double max_update_rate; 
-    geometry_msgs::msg::dds_::Vector3_ gravity; 
-    gazebo_msgs::msg::dds_::ODEPhysics_ ode_config; 
-}; 
- 
-}; }; };  // module dds_::srv::gazebo_msgs 
+module gazebo_msgs { 
+    module srv {  
+        struct SetPhysicsProperties_Request { 
+            double time_step; 
+            double max_update_rate; 
+            geometry_msgs::msg::Vector3 gravity; 
+            gazebo_msgs::msg::ODEPhysics ode_config; 
+        }; 
+    };
+};
 
 #endif  // __gazebo_msgs__srv__SetPhysicsProperties_Request__idl

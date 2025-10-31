@@ -22,19 +22,17 @@
 
 module sensor_msgs {
   module msg {
-    module dds_ {
-      @appendable struct PointCloud2_ {
-        std_msgs::msg::dds_::Header_ header;
+      @appendable struct PointCloud2 {
+        std_msgs::msg::Header header;
         uint32 height;
         uint32 width;
-        sequence<sensor_msgs::msg::dds_::PointField_> fields;
+        sequence<sensor_msgs::msg::PointField> fields;
         boolean is_bigendian;
         uint32 point_step;
         uint32 row_step;
         sequence<octet> data;
         boolean is_dense;
       };
-    };
   };
 };
 

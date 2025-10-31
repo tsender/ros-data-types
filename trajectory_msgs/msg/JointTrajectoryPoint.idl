@@ -21,15 +21,13 @@
 
 module trajectory_msgs {
   module msg {
-    module dds_ {
-      @appendable struct JointTrajectoryPoint_ {
+      @appendable struct JointTrajectoryPoint {
         sequence<double> positions;
         sequence<double> velocities;
         sequence<double> accelerations;
         sequence<double> effort;
-        builtin_interfaces::msg::dds_::Duration_ time_from_start;
+        builtin_interfaces::msg::Duration time_from_start;
       };
-    };
   };
 };
 

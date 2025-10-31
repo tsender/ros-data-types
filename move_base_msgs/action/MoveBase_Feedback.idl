@@ -21,11 +21,9 @@
 
 module move_base_msgs {
   module action {
-    module dds_ {
-      @appendable struct MoveBase_Feedback_ {
-        geometry_msgs::msg::dds_::PoseStamped_ base_position;
+      @appendable struct MoveBase_Feedback {
+        geometry_msgs::msg::PoseStamped base_position;
       };
-    };
   };
 };
 

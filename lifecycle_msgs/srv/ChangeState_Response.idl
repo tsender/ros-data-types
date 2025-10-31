@@ -19,11 +19,9 @@
 
 module lifecycle_msgs {
   module srv {
-    module dds_ {
-      @appendable struct ChangeState_Response_ {
+      @appendable struct ChangeState_Response {
         boolean success;
       };
-    };
   };
 };
 

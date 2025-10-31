@@ -26,43 +26,41 @@
 
 module visualization_msgs {
   module msg {
-    module dds_ {
       module Marker_Constants {
-        const int32 ARROW_ = 0;
-        const int32 CUBE_ = 1;
-        const int32 SPHERE_ = 2;
-        const int32 CYLINDER_ = 3;
-        const int32 LINE_STRIP_ = 4;
-        const int32 LINE_LIST_ = 5;
-        const int32 CUBE_LIST_ = 6;
-        const int32 SPHERE_LIST_ = 7;
-        const int32 POINTS_ = 8;
-        const int32 TEXT_VIEW_FACING_ = 9;
-        const int32 MESH_RESOURCE_ = 10;
-        const int32 TRIANGLE_LIST_ = 11;
-        const int32 ADD_ = 0;
-        const int32 MODIFY_ = 0;
-        const int32 DELETE_ = 2;
-        const int32 DELETEALL_ = 3;
+        const int32 ARROW = 0;
+        const int32 CUBE = 1;
+        const int32 SPHERE = 2;
+        const int32 CYLINDER = 3;
+        const int32 LINE_STRIP = 4;
+        const int32 LINE_LIST = 5;
+        const int32 CUBE_LIST = 6;
+        const int32 SPHERE_LIST = 7;
+        const int32 POINTS = 8;
+        const int32 TEXT_VIEW_FACING = 9;
+        const int32 MESH_RESOURCE = 10;
+        const int32 TRIANGLE_LIST = 11;
+        const int32 ADD = 0;
+        const int32 MODIFY = 0;
+        const int32 DELETE = 2;
+        const int32 DELETEALL = 3;
       };
-      @appendable struct Marker_ {
-        std_msgs::msg::dds_::Header_ header;
+      @appendable struct Marker {
+        std_msgs::msg::Header header;
         string ns;
         int32 id;
         int32 type;
         int32 action;
-        geometry_msgs::msg::dds_::Pose_ pose;
-        geometry_msgs::msg::dds_::Vector3_ scale;
-        std_msgs::msg::dds_::ColorRGBA_ color;
-        builtin_interfaces::msg::dds_::Duration_ lifetime;
+        geometry_msgs::msg::Pose pose;
+        geometry_msgs::msg::Vector3 scale;
+        std_msgs::msg::ColorRGBA color;
+        builtin_interfaces::msg::Duration lifetime;
         boolean frame_locked;
-        sequence<geometry_msgs::msg::dds_::Point_> points;
-        sequence<std_msgs::msg::dds_::ColorRGBA_> colors;
+        sequence<geometry_msgs::msg::Point> points;
+        sequence<std_msgs::msg::ColorRGBA> colors;
         string text;
         string mesh_resource;
         boolean mesh_use_embedded_materials;
       };
-    };
   };
 };
 

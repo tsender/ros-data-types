@@ -22,12 +22,10 @@
 
 module move_base_msgs {
   module action {
-    module dds_ {
-      @appendable struct MoveBase_SendGoal_Request_ {
-        unique_identifier_msgs::msg::dds_::UUID_ goal_id;
-        move_base_msgs::action::dds_::MoveBase_Goal_ goal;
+      @appendable struct MoveBase_SendGoal_Request {
+        unique_identifier_msgs::msg::UUID goal_id;
+        move_base_msgs::action::MoveBase_Goal goal;
       };
-    };
   };
 };
 

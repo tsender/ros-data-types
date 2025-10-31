@@ -23,11 +23,10 @@
 
 module pendulum_msgs {
   module msg {
-    module dds_ {
-      @appendable struct RttestResults_ {
-        builtin_interfaces::msg::dds_::Time_ stamp;
-        pendulum_msgs::msg::dds_::JointCommand_ command;
-        pendulum_msgs::msg::dds_::JointState_ state;
+      @appendable struct RttestResults {
+        builtin_interfaces::msg::Time stamp;
+        pendulum_msgs::msg::JointCommand command;
+        pendulum_msgs::msg::JointState state;
         uint64 cur_latency;
         double mean_latency;
         uint64 min_latency;
@@ -35,7 +34,6 @@ module pendulum_msgs {
         uint64 minor_pagefaults;
         uint64 major_pagefaults;
       };
-    };
   };
 };
 

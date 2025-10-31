@@ -19,11 +19,9 @@
 
 module turtlesim {
   module action {
-    module dds_ {
-      @appendable struct RotateAbsolute_Goal_ {
+      @appendable struct RotateAbsolute_Goal {
         float theta;
       };
-    };
   };
 };
 

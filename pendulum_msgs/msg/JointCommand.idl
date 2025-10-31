@@ -19,11 +19,9 @@
 
 module pendulum_msgs {
   module msg {
-    module dds_ {
-      @appendable struct JointCommand_ {
+      @appendable struct JointCommand {
         double position;
       };
-    };
   };
 };
 

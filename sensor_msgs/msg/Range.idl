@@ -21,20 +21,18 @@
 
 module sensor_msgs {
   module msg {
-    module dds_ {
       module Range_Constants {
-        const octet ULTRASOUND_ = 0;
-        const octet INFRARED_ = 1;
+        const octet ULTRASOUND = 0;
+        const octet INFRARED = 1;
       };
-      @appendable struct Range_ {
-        std_msgs::msg::dds_::Header_ header;
+      @appendable struct Range {
+        std_msgs::msg::Header header;
         octet radiation_type;
         float field_of_view;
         float min_range;
         float max_range;
         float range;
       };
-    };
   };
 };
 

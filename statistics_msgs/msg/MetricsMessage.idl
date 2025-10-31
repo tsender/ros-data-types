@@ -22,16 +22,14 @@
 
 module statistics_msgs {
   module msg {
-    module dds_ {
-      @appendable struct MetricsMessage_ {
+      @appendable struct MetricsMessage {
         string measurement_source_name;
         string metrics_source;
         string unit;
-        builtin_interfaces::msg::dds_::Time_ window_start;
-        builtin_interfaces::msg::dds_::Time_ window_stop;
-        sequence<statistics_msgs::msg::dds_::StatisticDataPoint_> statistics;
+        builtin_interfaces::msg::Time window_start;
+        builtin_interfaces::msg::Time window_stop;
+        sequence<statistics_msgs::msg::StatisticDataPoint> statistics;
       };
-    };
   };
 };
 

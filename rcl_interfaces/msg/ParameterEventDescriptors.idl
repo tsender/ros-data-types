@@ -21,13 +21,11 @@
 
 module rcl_interfaces {
   module msg {
-    module dds_ {
-      @appendable struct ParameterEventDescriptors_ {
-        sequence<rcl_interfaces::msg::dds_::ParameterDescriptor_> new_parameters;
-        sequence<rcl_interfaces::msg::dds_::ParameterDescriptor_> changed_parameters;
-        sequence<rcl_interfaces::msg::dds_::ParameterDescriptor_> deleted_parameters;
+      @appendable struct ParameterEventDescriptors {
+        sequence<rcl_interfaces::msg::ParameterDescriptor> new_parameters;
+        sequence<rcl_interfaces::msg::ParameterDescriptor> changed_parameters;
+        sequence<rcl_interfaces::msg::ParameterDescriptor> deleted_parameters;
       };
-    };
   };
 };
 

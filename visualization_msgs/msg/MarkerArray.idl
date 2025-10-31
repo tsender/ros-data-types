@@ -21,11 +21,9 @@
 
 module visualization_msgs {
   module msg {
-    module dds_ {
-      @appendable struct MarkerArray_ {
-        sequence<visualization_msgs::msg::dds_::Marker_> markers;
+      @appendable struct MarkerArray {
+        sequence<visualization_msgs::msg::Marker> markers;
       };
-    };
   };
 };
 

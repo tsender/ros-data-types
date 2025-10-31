@@ -19,23 +19,21 @@
 
 module rcl_interfaces {
   module msg {
-    module dds_ {
       module ParameterType_Constants {
-        const octet PARAMETER_NOT_SET_ = 0;
-        const octet PARAMETER_BOOL_ = 1;
-        const octet PARAMETER_INTEGER_ = 2;
-        const octet PARAMETER_DOUBLE_ = 3;
-        const octet PARAMETER_STRING_ = 4;
-        const octet PARAMETER_BYTE_ARRAY_ = 5;
-        const octet PARAMETER_BOOL_ARRAY_ = 6;
-        const octet PARAMETER_INTEGER_ARRAY_ = 7;
-        const octet PARAMETER_DOUBLE_ARRAY_ = 8;
-        const octet PARAMETER_STRING_ARRAY_ = 9;
+        const octet PARAMETER_NOT_SET = 0;
+        const octet PARAMETER_BOOL = 1;
+        const octet PARAMETER_INTEGER = 2;
+        const octet PARAMETER_DOUBLE = 3;
+        const octet PARAMETER_STRING = 4;
+        const octet PARAMETER_BYTE_ARRAY = 5;
+        const octet PARAMETER_BOOL_ARRAY = 6;
+        const octet PARAMETER_INTEGER_ARRAY = 7;
+        const octet PARAMETER_DOUBLE_ARRAY = 8;
+        const octet PARAMETER_STRING_ARRAY = 9;
       };
-      @appendable struct ParameterType_ {
+      @appendable struct ParameterType {
         octet structure_needs_at_least_one_member;
       };
-    };
   };
 };
 

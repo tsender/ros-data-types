@@ -19,15 +19,13 @@
 
 module sensor_msgs {
   module msg {
-    module dds_ {
-      @appendable struct RegionOfInterest_ {
+      @appendable struct RegionOfInterest {
         uint32 x_offset;
         uint32 y_offset;
         uint32 height;
         uint32 width;
         boolean do_rectify;
       };
-    };
   };
 };
 

@@ -17,13 +17,13 @@
 #ifndef __gazebo_msgs__srv__Default_Response__idl
 #define __gazebo_msgs__srv__Default_Response__idl
  
-module gazebo_msgs { module srv { module dds_ { 
- 
-struct Default_Response_ { 
-    boolean success; 
-    string status_message; 
-}; 
- 
-}; }; };  // module dds_::srv::gazebo_msgs 
+module gazebo_msgs { 
+    module srv {
+        struct Default_Response { 
+            boolean success; 
+            string status_message; 
+        }; 
+    }; 
+};
 
 #endif  // __gazebo_msgs__srv__Default_Response__idl

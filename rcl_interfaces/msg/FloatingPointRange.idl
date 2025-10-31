@@ -19,13 +19,11 @@
 
 module rcl_interfaces {
   module msg {
-    module dds_ {
-      @appendable struct FloatingPointRange_ {
+      @appendable struct FloatingPointRange {
         double from_value;
         double to_value;
         double step;
       };
-    };
   };
 };
 

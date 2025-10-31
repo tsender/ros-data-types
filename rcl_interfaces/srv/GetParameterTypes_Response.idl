@@ -19,11 +19,9 @@
 
 module rcl_interfaces {
   module srv {
-    module dds_ {
-      @appendable struct GetParameterTypes_Response_ {
+      @appendable struct GetParameterTypes_Response {
         sequence<octet> types;
       };
-    };
   };
 };
 

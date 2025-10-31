@@ -19,11 +19,9 @@
 
 module std_msgs {
   module msg {
-    module dds_ {
-      @appendable struct String_ {
+      @appendable struct String {
         string data;
       };
-    };
   };
 };
 

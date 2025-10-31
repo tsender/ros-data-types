@@ -19,10 +19,8 @@
 
 module composition_interfaces {
   module srv {
-    module dds_ {
-      @appendable struct UnloadNode_Request_ {
-        uint64 unique_id;
-      };
+    @appendable struct UnloadNode_Request {
+      uint64 unique_id;
     };
   };
 };

@@ -17,13 +17,13 @@
 #ifndef __gazebo_msgs__srv__GetLinkState_Request__idl
 #define __gazebo_msgs__srv__GetLinkState_Request__idl
  
-module gazebo_msgs { module srv { module dds_ { 
- 
-struct GetLinkState_Request_ { 
-    string link_name; 
-    string reference_frame; 
-}; 
- 
-}; }; };  // module dds_::srv::gazebo_msgs 
+module gazebo_msgs { 
+    module srv {
+        struct GetLinkState_Request { 
+            string link_name; 
+            string reference_frame; 
+        }; 
+    }; 
+};
 
 #endif  // __gazebo_msgs__srv__GetLinkState_Request__idl

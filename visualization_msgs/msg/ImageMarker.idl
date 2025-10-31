@@ -24,32 +24,30 @@
 
 module visualization_msgs {
   module msg {
-    module dds_ {
       module ImageMarker_Constants {
-        const int32 CIRCLE_ = 0;
-        const int32 LINE_STRIP_ = 1;
-        const int32 LINE_LIST_ = 2;
-        const int32 POLYGON_ = 3;
-        const int32 POINTS_ = 4;
-        const int32 ADD_ = 0;
-        const int32 REMOVE_ = 1;
+        const int32 CIRCLE = 0;
+        const int32 LINE_STRIP = 1;
+        const int32 LINE_LIST = 2;
+        const int32 POLYGON = 3;
+        const int32 POINTS = 4;
+        const int32 ADD = 0;
+        const int32 REMOVE = 1;
       };
-      @appendable struct ImageMarker_ {
-        std_msgs::msg::dds_::Header_ header;
+      @appendable struct ImageMarker {
+        std_msgs::msg::Header header;
         string ns;
         int32 id;
         int32 type;
         int32 action;
-        geometry_msgs::msg::dds_::Point_ position;
+        geometry_msgs::msg::Point position;
         float scale;
-        std_msgs::msg::dds_::ColorRGBA_ outline_color;
+        std_msgs::msg::ColorRGBA outline_color;
         octet filled;
-        std_msgs::msg::dds_::ColorRGBA_ fill_color;
-        builtin_interfaces::msg::dds_::Duration_ lifetime;
-        sequence<geometry_msgs::msg::dds_::Point_> points;
-        sequence<std_msgs::msg::dds_::ColorRGBA_> outline_colors;
+        std_msgs::msg::ColorRGBA fill_color;
+        builtin_interfaces::msg::Duration lifetime;
+        sequence<geometry_msgs::msg::Point> points;
+        sequence<std_msgs::msg::ColorRGBA> outline_colors;
       };
-    };
   };
 };
 

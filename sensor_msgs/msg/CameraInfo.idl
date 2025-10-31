@@ -22,9 +22,8 @@
 
 module sensor_msgs {
   module msg {
-    module dds_ {
-      @appendable struct CameraInfo_ {
-        std_msgs::msg::dds_::Header_ header;
+      @appendable struct CameraInfo {
+        std_msgs::msg::Header header;
         uint32 height;
         uint32 width;
         string distortion_model;
@@ -34,9 +33,8 @@ module sensor_msgs {
         double p[12];
         uint32 binning_x;
         uint32 binning_y;
-        sensor_msgs::msg::dds_::RegionOfInterest_ roi;
+        sensor_msgs::msg::RegionOfInterest roi;
       };
-    };
   };
 };
 

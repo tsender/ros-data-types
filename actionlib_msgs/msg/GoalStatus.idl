@@ -21,24 +21,22 @@
 
 module actionlib_msgs {
   module msg {
-    module dds_ {
-      module GoalStatus_Constants {
-        const octet PENDING_ = 0;
-        const octet ACTIVE_ = 1;
-        const octet PREEMPTED_ = 2;
-        const octet SUCCEEDED_ = 3;
-        const octet ABORTED_ = 4;
-        const octet REJECTED_ = 5;
-        const octet PREEMPTING_ = 6;
-        const octet RECALLING_ = 7;
-        const octet RECALLED_ = 8;
-        const octet LOST_ = 9;
-      };
-      @appendable struct GoalStatus_ {
-        actionlib_msgs::msg::dds_::GoalID_ goal_id;
-        octet status;
-        string text;
-      };
+    module GoalStatus_Constants {
+      const octet PENDING = 0;
+      const octet ACTIVE = 1;
+      const octet PREEMPTED = 2;
+      const octet SUCCEEDED = 3;
+      const octet ABORTED = 4;
+      const octet REJECTED = 5;
+      const octet PREEMPTING = 6;
+      const octet RECALLING = 7;
+      const octet RECALLED = 8;
+      const octet LOST = 9;
+    };
+    @appendable struct GoalStatus {
+      actionlib_msgs::msg::GoalID goal_id;
+      octet status;
+      string text;
     };
   };
 };

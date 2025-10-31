@@ -19,8 +19,7 @@
 
 module rcl_interfaces {
   module msg {
-    module dds_ {
-      @appendable struct ParameterValue_ {
+      @appendable struct ParameterValue {
         octet type;
         boolean bool_value;
         int64 integer_value;
@@ -32,7 +31,6 @@ module rcl_interfaces {
         sequence<double> double_array_value;
         sequence<string> string_array_value;
       };
-    };
   };
 };
 

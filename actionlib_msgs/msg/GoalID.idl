@@ -21,11 +21,9 @@
 
 module actionlib_msgs {
   module msg {
-    module dds_ {
-      @appendable struct GoalID_ {
-        builtin_interfaces::msg::dds_::Time_ stamp;
-        string id;
-      };
+    @appendable struct GoalID {
+      builtin_interfaces::msg::Time stamp;
+      string id;
     };
   };
 };

@@ -19,21 +19,21 @@
  
 #include "geometry_msgs/msg/Pose.idl" 
  
-module gazebo_msgs { module srv { module dds_ { 
- 
-struct SetLinkProperties_Request_ { 
-    string link_name; 
-    geometry_msgs::msg::dds_::Pose_ com; 
-    boolean gravity_mode; 
-    double mass; 
-    double ixx; 
-    double ixy; 
-    double ixz; 
-    double iyy; 
-    double iyz; 
-    double izz; 
-}; 
- 
-}; }; };  // module dds_::srv::gazebo_msgs 
+module gazebo_msgs { 
+    module srv {  
+        struct SetLinkProperties_Request { 
+            string link_name; 
+            geometry_msgs::msg::Pose com; 
+            boolean gravity_mode; 
+            double mass; 
+            double ixx; 
+            double ixy; 
+            double ixz; 
+            double iyy; 
+            double iyz; 
+            double izz; 
+        }; 
+    }; 
+};
 
 #endif  // __gazebo_msgs__srv__SetLinkProperties_Request__idl

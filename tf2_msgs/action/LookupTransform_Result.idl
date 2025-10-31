@@ -22,12 +22,10 @@
 
 module tf2_msgs {
   module action {
-    module dds_ {
-      @appendable struct LookupTransform_Result_ {
-        geometry_msgs::msg::dds_::TransformStamped_ transform;
-        tf2_msgs::msg::dds_::TF2Error_ error;
+      @appendable struct LookupTransform_Result {
+        geometry_msgs::msg::TransformStamped transform;
+        tf2_msgs::msg::TF2Error error;
       };
-    };
   };
 };
 

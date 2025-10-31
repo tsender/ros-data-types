@@ -19,16 +19,16 @@
  
 #include "std_msgs/msg/ColorRGBA.idl" 
  
-module gazebo_msgs { module srv { module dds_ { 
- 
-struct SetLightProperties_Request_ { 
-    string light_name; 
-    std_msgs::msg::dds_::ColorRGBA_ diffuse; 
-    double attenuation_constant; 
-    double attenuation_linear; 
-    double attenuation_quadratic; 
-}; 
- 
-}; }; };  // module dds_::srv::gazebo_msgs 
+module gazebo_msgs { 
+    module srv {  
+        struct SetLightProperties_Request { 
+            string light_name; 
+            std_msgs::msg::ColorRGBA diffuse; 
+            double attenuation_constant; 
+            double attenuation_linear; 
+            double attenuation_quadratic; 
+        }; 
+    }; 
+};
 
 #endif  // __gazebo_msgs__srv__SetLightProperties_Request__idl

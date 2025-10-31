@@ -19,11 +19,9 @@
 
 module nav_msgs {
   module srv {
-    module dds_ {
-      @appendable struct SetMap_Response_ {
+      @appendable struct SetMap_Response {
         boolean success;
       };
-    };
   };
 };
 

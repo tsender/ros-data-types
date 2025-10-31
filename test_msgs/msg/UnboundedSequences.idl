@@ -23,8 +23,7 @@
 
 module test_msgs {
   module msg {
-    module dds_ {
-      @appendable struct UnboundedSequences_ {
+      @appendable struct UnboundedSequences {
         sequence<boolean> bool_values;
         sequence<octet> byte_values;
         sequence<octet> char_values;
@@ -39,9 +38,9 @@ module test_msgs {
         sequence<int64> int64_values;
         sequence<uint64> uint64_values;
         sequence<string> string_values;
-        sequence<test_msgs::msg::dds_::BasicTypes_> basic_types_values;
-        sequence<test_msgs::msg::dds_::Constants_> constants_values;
-        sequence<test_msgs::msg::dds_::Defaults_> defaults_values;
+        sequence<test_msgs::msg::BasicTypes> basic_types_values;
+        sequence<test_msgs::msg::Constants> constants_values;
+        sequence<test_msgs::msg::Defaults> defaults_values;
         sequence<boolean> bool_values_default;
         sequence<octet> byte_values_default;
         sequence<octet> char_values_default;
@@ -58,7 +57,6 @@ module test_msgs {
         sequence<string> string_values_default;
         int32 alignment_check;
       };
-    };
   };
 };
 

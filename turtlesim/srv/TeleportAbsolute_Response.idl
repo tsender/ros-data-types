@@ -19,11 +19,9 @@
 
 module turtlesim {
   module srv {
-    module dds_ {
-      @appendable struct TeleportAbsolute_Response_ {
+      @appendable struct TeleportAbsolute_Response {
         octet structure_needs_at_least_one_member;
       };
-    };
   };
 };
 

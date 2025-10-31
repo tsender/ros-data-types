@@ -19,12 +19,10 @@
 
 module std_srvs {
   module srv {
-    module dds_ {
-      @appendable struct SetBool_Response_ {
+      @appendable struct SetBool_Response {
         boolean success;
         string message;
       };
-    };
   };
 };
 

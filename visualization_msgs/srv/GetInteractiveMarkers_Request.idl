@@ -19,11 +19,9 @@
 
 module visualization_msgs {
   module srv {
-    module dds_ {
-      @appendable struct GetInteractiveMarkers_Request_ {
+      @appendable struct GetInteractiveMarkers_Request {
         octet structure_needs_at_least_one_member;
       };
-    };
   };
 };
 

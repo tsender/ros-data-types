@@ -19,11 +19,9 @@
 
 module turtlesim {
   module srv {
-    module dds_ {
-      @appendable struct Spawn_Response_ {
+      @appendable struct Spawn_Response {
         string name;
       };
-    };
   };
 };
 

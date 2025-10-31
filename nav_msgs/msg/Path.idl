@@ -22,12 +22,10 @@
 
 module nav_msgs {
   module msg {
-    module dds_ {
-      @appendable struct Path_ {
-        std_msgs::msg::dds_::Header_ header;
-        sequence<geometry_msgs::msg::dds_::PoseStamped_> poses;
+      @appendable struct Path {
+        std_msgs::msg::Header header;
+        sequence<geometry_msgs::msg::PoseStamped> poses;
       };
-    };
   };
 };
 

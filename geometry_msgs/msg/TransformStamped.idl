@@ -22,13 +22,11 @@
 
 module geometry_msgs {
   module msg {
-    module dds_ {
-      @appendable struct TransformStamped_ {
-        std_msgs::msg::dds_::Header_ header;
+      @appendable struct TransformStamped {
+        std_msgs::msg::Header header;
         string child_frame_id;
-        geometry_msgs::msg::dds_::Transform_ transform;
+        geometry_msgs::msg::Transform transform;
       };
-    };
   };
 };
 

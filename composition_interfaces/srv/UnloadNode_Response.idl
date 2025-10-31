@@ -19,11 +19,9 @@
 
 module composition_interfaces {
   module srv {
-    module dds_ {
-      @appendable struct UnloadNode_Response_ {
-        boolean success;
-        string error_message;
-      };
+    @appendable struct UnloadNode_Response {
+      boolean success;
+      string error_message;
     };
   };
 };

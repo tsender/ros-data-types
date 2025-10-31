@@ -9,39 +9,28 @@
 
 
 module lgsvl_msgs {
+    module msg {
+        module DetectedRadarObject_Constants {
+        const octet STATE_MOVING = 0;
+        const octet STATE_STATIONARY = 1;
+        };
 
-module msg {
-
-module dds_ {
-
-module DetectedRadarObject_Constants {
-const octet STATE_MOVING = 0;
-const octet STATE_STATIONARY = 1;
-
-};
-
-struct DetectedRadarObject_ {
-long id;
-geometry_msgs::msg::dds_::Vector3_ sensor_aim;
-geometry_msgs::msg::dds_::Vector3_ sensor_right;
-geometry_msgs::msg::dds_::Point_ sensor_position;
-geometry_msgs::msg::dds_::Vector3_ sensor_velocity;
-double sensor_angle;
-geometry_msgs::msg::dds_::Point_ object_position;
-geometry_msgs::msg::dds_::Vector3_ object_velocity;
-geometry_msgs::msg::dds_::Point_ object_relative_position;
-geometry_msgs::msg::dds_::Vector3_ object_relative_velocity;
-geometry_msgs::msg::dds_::Vector3_ object_collider_size;
-octet object_state;
-boolean new_detection;
-
-};
-
-
-};  // module dds_
-
-};  // module msg
-
+        struct DetectedRadarObject {
+        long id;
+        geometry_msgs::msg::Vector3 sensor_aim;
+        geometry_msgs::msg::Vector3 sensor_right;
+        geometry_msgs::msg::Point sensor_position;
+        geometry_msgs::msg::Vector3 sensor_velocity;
+        double sensor_angle;
+        geometry_msgs::msg::Point object_position;
+        geometry_msgs::msg::Vector3 object_velocity;
+        geometry_msgs::msg::Point object_relative_position;
+        geometry_msgs::msg::Vector3 object_relative_velocity;
+        geometry_msgs::msg::Vector3 object_collider_size;
+        octet object_state;
+        boolean new_detection;
+        };
+    };  // module msg
 };  // module lgsvl_msgs
 
 

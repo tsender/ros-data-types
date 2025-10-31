@@ -19,11 +19,9 @@
 
 module rqt_py_common {
   module msg {
-    module dds_ {
-      @appendable struct Val_ {
+      @appendable struct Val {
         double floats[5];
       };
-    };
   };
 };
 

@@ -17,21 +17,21 @@
 #ifndef __gazebo_msgs__msg__ODEJointProperties__idl
 #define __gazebo_msgs__msg__ODEJointProperties__idl
 
-module gazebo_msgs { module msg { module dds_ {
- 
-struct ODEJointProperties_ { 
-    sequence<double> damping; 
-    sequence<double> hiStop; 
-    sequence<double> loStop; 
-    sequence<double> erp; 
-    sequence<double> cfm; 
-    sequence<double> stop_erp; 
-    sequence<double> stop_cfm; 
-    sequence<double> fudge_factor; 
-    sequence<double> fmax; 
-    sequence<double> vel; 
-}; 
- 
-}; }; };  // module dds_::msg::gazebo_msgs 
+module gazebo_msgs { 
+    module msg {
+        struct ODEJointProperties { 
+            sequence<double> damping; 
+            sequence<double> hiStop; 
+            sequence<double> loStop; 
+            sequence<double> erp; 
+            sequence<double> cfm; 
+            sequence<double> stop_erp; 
+            sequence<double> stop_cfm; 
+            sequence<double> fudge_factor; 
+            sequence<double> fmax; 
+            sequence<double> vel; 
+        }; 
+    }; 
+};
 
 #endif  // __gazebo_msgs__msg__ODEJointProperties__idl

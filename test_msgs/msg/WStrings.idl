@@ -19,17 +19,15 @@
 
 module test_msgs {
   module msg {
-    module dds_ {
-      @appendable struct WStrings_ {
+      @appendable struct WStrings {
         wstring wstring_value;
         wstring wstring_value_default1;
         wstring wstring_value_default2;
         wstring wstring_value_default3;
         wstring array_of_wstrings[3];
-        sequence<wstring,3 > bounded_sequence_of_wstrings;
+        sequence<wstring,3> bounded_sequence_of_wstrings;
         sequence<wstring> unbounded_sequence_of_wstrings;
       };
-    };
   };
 };
 

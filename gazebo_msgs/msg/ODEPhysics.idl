@@ -17,21 +17,21 @@
 #ifndef __gazebo_msgs__msg__ODEPhysics__idl
 #define __gazebo_msgs__msg__ODEPhysics__idl
 
-module gazebo_msgs { module msg { module dds_ {
- 
-struct ODEPhysics_ { 
-    boolean auto_disable_bodies; 
-    unsigned long sor_pgs_precon_iters; 
-    unsigned long sor_pgs_iters; 
-    double psor_pgs_w; 
-    double sor_pgs_rms_error_tol; 
-    double contact_surface_layer; 
-    double contact_max_correcting_vel; 
-    double cfm; 
-    double erp; 
-    unsigned long max_contacts; 
-}; 
- 
-}; }; };  // module dds_::msg::gazebo_msgs 
+module gazebo_msgs { 
+    module msg {
+        struct ODEPhysics { 
+            boolean auto_disable_bodies; 
+            unsigned long sor_pgs_precon_iters; 
+            unsigned long sor_pgs_iters; 
+            double psor_pgs_w; 
+            double sor_pgs_rms_error_tol; 
+            double contact_surface_layer; 
+            double contact_max_correcting_vel; 
+            double cfm; 
+            double erp; 
+            unsigned long max_contacts; 
+        }; 
+    };
+};
 
 #endif  // __gazebo_msgs__msg__ODEPhysics__idl

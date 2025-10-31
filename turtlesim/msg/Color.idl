@@ -19,13 +19,11 @@
 
 module turtlesim {
   module msg {
-    module dds_ {
-      @appendable struct Color_ {
+      @appendable struct Color {
         octet r;
         octet g;
         octet b;
       };
-    };
   };
 };
 

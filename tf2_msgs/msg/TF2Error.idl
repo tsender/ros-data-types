@@ -19,21 +19,19 @@
 
 module tf2_msgs {
   module msg {
-    module dds_ {
       module TF2Error_Constants {
-        const octet NO_ERROR_ = 0;
-        const octet LOOKUP_ERROR_ = 1;
-        const octet CONNECTIVITY_ERROR_ = 2;
-        const octet EXTRAPOLATION_ERROR_ = 3;
-        const octet INVALID_ARGUMENT_ERROR_ = 4;
-        const octet TIMEOUT_ERROR_ = 5;
-        const octet TRANSFORM_ERROR_ = 6;
+        const octet NO_ERROR = 0;
+        const octet LOOKUP_ERROR = 1;
+        const octet CONNECTIVITY_ERROR = 2;
+        const octet EXTRAPOLATION_ERROR = 3;
+        const octet INVALID_ARGUMENT_ERROR = 4;
+        const octet TIMEOUT_ERROR = 5;
+        const octet TRANSFORM_ERROR = 6;
       };
-      @appendable struct TF2Error_ {
+      @appendable struct TF2Error {
         octet error;
         string error_string;
       };
-    };
   };
 };
 

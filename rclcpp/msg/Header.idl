@@ -21,11 +21,9 @@
 
 module rclcpp {
   module msg {
-    module dds_ {
-      @appendable struct Header_ {
-        builtin_interfaces::msg::dds_::Time_ stamp;
+      @appendable struct Header {
+        builtin_interfaces::msg::Time stamp;
       };
-    };
   };
 };
 

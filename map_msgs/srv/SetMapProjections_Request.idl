@@ -19,11 +19,9 @@
 
 module map_msgs {
   module srv {
-    module dds_ {
-      @appendable struct SetMapProjections_Request_ {
+      @appendable struct SetMapProjections_Request {
         octet structure_needs_at_least_one_member;
       };
-    };
   };
 };
 
