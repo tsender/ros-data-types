@@ -19,11 +19,9 @@
 
 module example_interfaces {
   module action {
-    module dds_ {
-      @appendable struct Fibonacci_Goal_ {
+      @appendable struct Fibonacci_Goal {
         int32 order;
       };
-    };
   };
 };
 

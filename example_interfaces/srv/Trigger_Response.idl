@@ -19,12 +19,10 @@
 
 module example_interfaces {
   module srv {
-    module dds_ {
-      @appendable struct Trigger_Response_ {
+      @appendable struct Trigger_Response {
         boolean success;
         string message;
       };
-    };
   };
 };
 

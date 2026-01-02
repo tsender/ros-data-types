@@ -22,12 +22,10 @@
 
 module example_interfaces {
   module action {
-    module dds_ {
-      @appendable struct Fibonacci_FeedbackMessage_ {
-        unique_identifier_msgs::msg::dds_::UUID_ goal_id;
-        example_interfaces::action::dds_::Fibonacci_Feedback_ feedback;
+      @appendable struct Fibonacci_FeedbackMessage {
+        unique_identifier_msgs::msg::UUID goal_id;
+        example_interfaces::action::Fibonacci_Feedback feedback;
       };
-    };
   };
 };
 
