@@ -41,8 +41,7 @@ list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/RegionOfInterest.idl")
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/RelativeHumidity.idl")
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/Temperature.idl")
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/TimeReference.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/SetCameraInfo_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/SetCameraInfo_Response.idl")
+list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/SetCameraInfo.idl")
 
 # for unbounded strings & sequences use -DUNBOUNDED_ALL on CMake cmdline
 if(UNBOUNDED_ALL)

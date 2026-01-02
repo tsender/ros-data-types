@@ -14,14 +14,7 @@
 
 include(ConnextDdsRosDdsTypes)
 
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/Fibonacci_Feedback.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/Fibonacci_FeedbackMessage.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/Fibonacci_GetResult_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/Fibonacci_GetResult_Response.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/Fibonacci_Goal.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/Fibonacci_Result.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/Fibonacci_SendGoal_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/Fibonacci_SendGoal_Response.idl")
+list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/Fibonacci.idl")
 
 # for unbounded strings & sequences use -DUNBOUNDED_ALL on CMake cmdline
 if(UNBOUNDED_ALL)

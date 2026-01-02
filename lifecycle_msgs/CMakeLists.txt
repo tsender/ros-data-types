@@ -19,14 +19,10 @@ list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/Transition.idl")
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/TransitionDescription.idl")
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/TransitionEvent.idl")
 
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/ChangeState_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/ChangeState_Response.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/GetAvailableStates_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/GetAvailableStates_Response.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/GetAvailableTransitions_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/GetAvailableTransitions_Response.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/GetState_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/GetState_Response.idl")
+list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/ChangeState.idl")
+list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/GetAvailableStates.idl")
+list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/GetAvailableTransitions.idl")
+list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/GetState.idl")
 
 # for unbounded strings & sequences use -DUNBOUNDED_ALL on CMake cmdline
 if(UNBOUNDED_ALL)

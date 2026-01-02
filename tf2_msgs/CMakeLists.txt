@@ -16,18 +16,10 @@ include(ConnextDdsRosDdsTypes)
 
 
 
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/LookupTransform_Feedback.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/LookupTransform_FeedbackMessage.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/LookupTransform_GetResult_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/LookupTransform_GetResult_Response.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/LookupTransform_Goal.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/LookupTransform_Result.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/LookupTransform_SendGoal_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/LookupTransform_SendGoal_Response.idl")
+list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/LookupTransform.idl")
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/TF2Error.idl")
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/TFMessage.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/FrameGraph_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/FrameGraph_Response.idl")
+list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/FrameGraph.idl")
 
 # for unbounded strings & sequences use -DUNBOUNDED_ALL on CMake cmdline
 if(UNBOUNDED_ALL)

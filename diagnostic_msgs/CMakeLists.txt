@@ -17,10 +17,8 @@ include(ConnextDdsRosDdsTypes)
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/DiagnosticArray.idl")
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/DiagnosticStatus.idl")
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/KeyValue.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/AddDiagnostics_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/AddDiagnostics_Response.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/SelfTest_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/SelfTest_Response.idl")
+list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/AddDiagnostics.idl")
+list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/SelfTest.idl")
 
 # for unbounded strings & sequences use -DUNBOUNDED_ALL on CMake cmdline
 if(UNBOUNDED_ALL)

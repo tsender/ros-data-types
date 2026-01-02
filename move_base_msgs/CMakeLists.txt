@@ -14,14 +14,7 @@
 
 include(ConnextDdsRosDdsTypes)
 
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/MoveBase_Feedback.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/MoveBase_FeedbackMessage.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/MoveBase_GetResult_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/MoveBase_GetResult_Response.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/MoveBase_Goal.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/MoveBase_Result.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/MoveBase_SendGoal_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/MoveBase_SendGoal_Response.idl")
+list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/action/MoveBase.idl")
 
 # for unbounded strings & sequences use -DUNBOUNDED_ALL on CMake cmdline
 if(UNBOUNDED_ALL)

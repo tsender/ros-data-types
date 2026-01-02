@@ -20,12 +20,9 @@ list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/OccupancyGrid.idl")
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/Odometry.idl")
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/Path.idl")
 
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/GetMap_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/GetMap_Response.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/GetPlan_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/GetPlan_Response.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/SetMap_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/SetMap_Response.idl")
+list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/GetMap.idl")
+list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/GetPlan.idl")
+list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/SetMap.idl")
 
 # for unbounded strings & sequences use -DUNBOUNDED_ALL on CMake cmdline
 if(UNBOUNDED_ALL)

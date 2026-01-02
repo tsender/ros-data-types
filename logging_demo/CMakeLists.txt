@@ -14,8 +14,7 @@
 
 include(ConnextDdsRosDdsTypes)
 
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/ConfigLogger_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/ConfigLogger_Response.idl")
+list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/ConfigLogger.idl")
 
 # for unbounded strings & sequences use -DUNBOUNDED_ALL on CMake cmdline
 if(UNBOUNDED_ALL)

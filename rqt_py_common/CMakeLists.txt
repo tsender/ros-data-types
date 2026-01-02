@@ -16,8 +16,7 @@ include(ConnextDdsRosDdsTypes)
 
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/ArrayVal.idl")
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/Val.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/AddTwoInts_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/AddTwoInts_Response.idl")
+list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/AddTwoInts.idl")
 
 # for unbounded strings & sequences use -DUNBOUNDED_ALL on CMake cmdline
 if(UNBOUNDED_ALL)

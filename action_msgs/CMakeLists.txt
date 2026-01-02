@@ -17,8 +17,7 @@ include(ConnextDdsRosDdsTypes)
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/GoalInfo.idl")
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/GoalStatus.idl")
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/GoalStatusArray.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/CancelGoal_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/CancelGoal_Response.idl")
+list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/CancelGoal.idl")
 
 # for unbounded strings & sequences use -DUNBOUNDED_ALL on CMake cmdline
 if(UNBOUNDED_ALL)

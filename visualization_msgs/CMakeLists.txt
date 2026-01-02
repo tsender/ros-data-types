@@ -25,8 +25,7 @@ list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/Marker.idl")
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/MarkerArray.idl")
 list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/msg/MenuEntry.idl")
 
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/GetInteractiveMarkers_Request.idl")
-list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/GetInteractiveMarkers_Response.idl")
+list(APPEND idl_files "${CMAKE_CURRENT_SOURCE_DIR}/srv/GetInteractiveMarkers.idl")
 
 # for unbounded strings & sequences use -DUNBOUNDED_ALL on CMake cmdline
 if(UNBOUNDED_ALL)
