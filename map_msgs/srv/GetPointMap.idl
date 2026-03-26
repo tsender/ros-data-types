@@ -21,10 +21,10 @@
 
 module map_msgs {
   module srv {
-      @appendable struct GetPointMap_Request {
+      struct GetPointMap_Request {
         octet structure_needs_at_least_one_member;
       };
-      @appendable struct GetPointMap_Response {
+      struct GetPointMap_Response {
         sensor_msgs::msg::PointCloud2 map;
       };
   };

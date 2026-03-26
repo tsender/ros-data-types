@@ -23,7 +23,7 @@
 
 module nav_msgs {
   module msg {
-      @appendable struct Odometry {
+      struct Odometry {
         std_msgs::msg::Header header;
         string child_frame_id;
         geometry_msgs::msg::PoseWithCovariance pose;

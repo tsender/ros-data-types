@@ -19,7 +19,7 @@
 
 module rosidl_generator_py {
   module msg {
-      @appendable struct BasicTypes {
+      struct BasicTypes {
         boolean bool_value;
         octet byte_value;
         octet char_value;

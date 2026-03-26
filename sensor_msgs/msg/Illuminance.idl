@@ -21,7 +21,7 @@
 
 module sensor_msgs {
   module msg {
-      @appendable struct Illuminance {
+      struct Illuminance {
         std_msgs::msg::Header header;
         double illuminance;
         double variance;

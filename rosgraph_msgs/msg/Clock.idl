@@ -21,7 +21,7 @@
 
 module rosgraph_msgs {
   module msg {
-      @appendable struct Clock {
+      struct Clock {
         builtin_interfaces::msg::Time clock;
       };
   };

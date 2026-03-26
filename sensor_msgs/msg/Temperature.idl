@@ -21,7 +21,7 @@
 
 module sensor_msgs {
   module msg {
-      @appendable struct Temperature {
+      struct Temperature {
         std_msgs::msg::Header header;
         double temperature;
         double variance;

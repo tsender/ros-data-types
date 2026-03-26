@@ -21,7 +21,7 @@
 
 module map_msgs {
   module srv {
-      @appendable struct GetPointMapROI_Request {
+      struct GetPointMapROI_Request {
         double x;
         double y;
         double z;
@@ -30,7 +30,7 @@ module map_msgs {
         double l_y;
         double l_z;
       };
-      @appendable struct GetPointMapROI_Response {
+      struct GetPointMapROI_Response {
         sensor_msgs::msg::PointCloud2 sub_map;
       };
   };

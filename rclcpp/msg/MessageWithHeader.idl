@@ -21,7 +21,7 @@
 
 module rclcpp {
   module msg {
-      @appendable struct MessageWithHeader {
+      struct MessageWithHeader {
         rclcpp::msg::Header header;
       };
   };

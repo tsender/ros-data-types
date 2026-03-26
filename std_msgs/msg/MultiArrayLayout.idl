@@ -21,7 +21,7 @@
 
 module std_msgs {
   module msg {
-      @appendable struct MultiArrayLayout {
+      struct MultiArrayLayout {
         sequence<std_msgs::msg::MultiArrayDimension> dim;
         uint32 data_offset;
       };

@@ -21,7 +21,7 @@
 
 module rcl_interfaces {
   module msg {
-      @appendable struct ParameterEventDescriptors {
+      struct ParameterEventDescriptors {
         sequence<rcl_interfaces::msg::ParameterDescriptor> new_parameters;
         sequence<rcl_interfaces::msg::ParameterDescriptor> changed_parameters;
         sequence<rcl_interfaces::msg::ParameterDescriptor> deleted_parameters;

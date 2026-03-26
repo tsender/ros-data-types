@@ -21,7 +21,7 @@
 
 module sensor_msgs {
   module msg {
-      @appendable struct JointState {
+      struct JointState {
         std_msgs::msg::Header header;
         sequence<string> name;
         sequence<double> position;

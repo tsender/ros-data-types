@@ -21,10 +21,10 @@
 
 module map_msgs {
   module srv {
-      @appendable struct SaveMap_Request {
+      struct SaveMap_Request {
         std_msgs::msg::String filename;
       };
-      @appendable struct SaveMap_Response {
+      struct SaveMap_Response {
         octet structure_needs_at_least_one_member;
       };
   };

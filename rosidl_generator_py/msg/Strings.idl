@@ -22,7 +22,7 @@ module rosidl_generator_py {
       module Strings_Constants {
         const string STRING_CONST = "Hello world!";
       };
-      @appendable struct Strings {
+      struct Strings {
         string string_value;
         string string_value_default1;
         string string_value_default2;

@@ -21,10 +21,10 @@
 
 module lifecycle_msgs {
   module srv {
-      @appendable struct ChangeState_Request {
+      struct ChangeState_Request {
         lifecycle_msgs::msg::Transition transition;
       };
-      @appendable struct ChangeState_Response {
+      struct ChangeState_Response {
         boolean success;
       };
   };

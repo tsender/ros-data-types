@@ -21,7 +21,7 @@
 
 module sensor_msgs {
   module msg {
-      @appendable struct RelativeHumidity {
+      struct RelativeHumidity {
         std_msgs::msg::Header header;
         double relative_humidity;
         double variance;

@@ -19,7 +19,7 @@
 
 module rcl_interfaces {
   module msg {
-      @appendable struct IntegerRange {
+      struct IntegerRange {
         int64 from_value;
         int64 to_value;
         uint64 step;

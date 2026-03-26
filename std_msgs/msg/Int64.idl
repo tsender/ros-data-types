@@ -19,7 +19,7 @@
 
 module std_msgs {
   module msg {
-      @appendable struct Int64 {
+      struct Int64 {
         int64 data;
       };
   };

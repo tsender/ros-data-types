@@ -19,7 +19,7 @@
 
 module std_msgs {
   module msg {
-      @appendable struct Byte {
+      struct Byte {
         octet data;
       };
   };

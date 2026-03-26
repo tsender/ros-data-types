@@ -19,7 +19,7 @@
 
 module std_msgs {
   module msg {
-      @appendable struct Bool {
+      struct Bool {
         boolean data;
       };
   };

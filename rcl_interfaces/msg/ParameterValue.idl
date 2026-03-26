@@ -19,7 +19,7 @@
 
 module rcl_interfaces {
   module msg {
-      @appendable struct ParameterValue {
+      struct ParameterValue {
         octet type;
         boolean bool_value;
         int64 integer_value;

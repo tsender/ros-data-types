@@ -21,7 +21,7 @@
 
 module geometry_msgs {
   module msg {
-    @appendable struct Inertia {
+    struct Inertia {
       double m;
       geometry_msgs::msg::Vector3 com;
       double ixx;

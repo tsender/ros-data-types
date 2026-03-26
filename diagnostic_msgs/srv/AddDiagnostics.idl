@@ -19,10 +19,10 @@
 
 module diagnostic_msgs {
   module srv {
-    @appendable struct AddDiagnostics_Request {
+    struct AddDiagnostics_Request {
       string load_namespace;
     };
-    @appendable struct AddDiagnostics_Response {
+    struct AddDiagnostics_Response {
       boolean success;
       string message;
     };

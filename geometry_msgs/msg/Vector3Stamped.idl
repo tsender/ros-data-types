@@ -22,7 +22,7 @@
 
 module geometry_msgs {
   module msg {
-      @appendable struct Vector3Stamped {
+      struct Vector3Stamped {
         std_msgs::msg::Header header;
         geometry_msgs::msg::Vector3 vector;
       };

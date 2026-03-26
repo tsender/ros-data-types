@@ -21,7 +21,7 @@
 
 module map_msgs {
   module msg {
-      @appendable struct OccupancyGridUpdate {
+      struct OccupancyGridUpdate {
         std_msgs::msg::Header header;
         int32 x;
         int32 y;

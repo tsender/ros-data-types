@@ -23,7 +23,7 @@
 
 module rosidl_generator_py {
   module msg {
-      @appendable struct Arrays {
+      struct Arrays {
         boolean bool_values[3];
         octet byte_values[3];
         octet char_values[3];

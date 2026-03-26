@@ -22,7 +22,7 @@
 
 module actionlib_msgs {
   module msg {
-    @appendable struct GoalStatusArray {
+    struct GoalStatusArray {
       std_msgs::msg::Header header;
       sequence<actionlib_msgs::msg::GoalStatus> status_list;
     };

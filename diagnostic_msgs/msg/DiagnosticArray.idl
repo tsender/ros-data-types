@@ -22,7 +22,7 @@
 
 module diagnostic_msgs {
   module msg {
-    @appendable struct DiagnosticArray {
+    struct DiagnosticArray {
       std_msgs::msg::Header header;
       sequence<diagnostic_msgs::msg::DiagnosticStatus> status;
     };

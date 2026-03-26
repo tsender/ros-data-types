@@ -22,12 +22,12 @@
 
 module nav_msgs {
   module srv {
-      @appendable struct GetPlan_Request {
+      struct GetPlan_Request {
         geometry_msgs::msg::PoseStamped start;
         geometry_msgs::msg::PoseStamped goal;
         float tolerance;
       };
-      @appendable struct GetPlan_Response {
+      struct GetPlan_Response {
         nav_msgs::msg::Path plan;
       };
   };

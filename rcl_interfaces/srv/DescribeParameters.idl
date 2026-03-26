@@ -21,10 +21,10 @@
 
 module rcl_interfaces {
   module srv {
-      @appendable struct DescribeParameters_Request {
+      struct DescribeParameters_Request {
         sequence<string> names;
       };
-      @appendable struct DescribeParameters_Response {
+      struct DescribeParameters_Response {
         sequence<rcl_interfaces::msg::ParameterDescriptor> descriptors;
       };
   };

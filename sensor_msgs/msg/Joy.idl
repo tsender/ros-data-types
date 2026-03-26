@@ -21,7 +21,7 @@
 
 module sensor_msgs {
   module msg {
-      @appendable struct Joy {
+      struct Joy {
         std_msgs::msg::Header header;
         sequence<float> axes;
         sequence<int32> buttons;

@@ -21,7 +21,7 @@
 
 module visualization_msgs {
   module msg {
-      @appendable struct MarkerArray {
+      struct MarkerArray {
         sequence<visualization_msgs::msg::Marker> markers;
       };
   };

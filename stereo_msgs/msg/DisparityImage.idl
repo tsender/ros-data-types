@@ -23,7 +23,7 @@
 
 module stereo_msgs {
   module msg {
-      @appendable struct DisparityImage {
+      struct DisparityImage {
         std_msgs::msg::Header header;
         sensor_msgs::msg::Image image;
         float f;

@@ -21,7 +21,7 @@
 
 module std_msgs {
   module msg {
-      @appendable struct ByteMultiArray {
+      struct ByteMultiArray {
         std_msgs::msg::MultiArrayLayout layout;
         sequence<octet> data;
       };

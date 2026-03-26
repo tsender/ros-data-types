@@ -21,10 +21,10 @@
 
 module visualization_msgs {
   module srv {
-      @appendable struct GetInteractiveMarkers_Request {
+      struct GetInteractiveMarkers_Request {
         octet structure_needs_at_least_one_member;
       };
-      @appendable struct GetInteractiveMarkers_Response {
+      struct GetInteractiveMarkers_Response {
         uint64 sequence_number;
         sequence<visualization_msgs::msg::InteractiveMarker> markers;
       };

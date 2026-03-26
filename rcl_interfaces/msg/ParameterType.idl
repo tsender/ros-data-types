@@ -31,7 +31,7 @@ module rcl_interfaces {
         const octet PARAMETER_DOUBLE_ARRAY = 8;
         const octet PARAMETER_STRING_ARRAY = 9;
       };
-      @appendable struct ParameterType {
+      struct ParameterType {
         octet structure_needs_at_least_one_member;
       };
   };

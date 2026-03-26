@@ -21,10 +21,10 @@
 
 module sensor_msgs {
   module srv {
-      @appendable struct SetCameraInfo_Request {
+      struct SetCameraInfo_Request {
         sensor_msgs::msg::CameraInfo camera_info;
       };
-      @appendable struct SetCameraInfo_Response {
+      struct SetCameraInfo_Response {
         boolean success;
         string status_message;
       };

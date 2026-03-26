@@ -22,10 +22,10 @@
 
 module rcl_interfaces {
   module srv {
-      @appendable struct SetParameters_Request {
+      struct SetParameters_Request {
         sequence<rcl_interfaces::msg::Parameter> parameters;
       };
-      @appendable struct SetParameters_Response {
+      struct SetParameters_Response {
         sequence<rcl_interfaces::msg::SetParametersResult> results;
       };
   };

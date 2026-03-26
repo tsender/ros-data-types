@@ -21,10 +21,10 @@
 
 module nav_msgs {
   module srv {
-      @appendable struct GetMap_Request {
+      struct GetMap_Request {
         octet structure_needs_at_least_one_member;
       };
-      @appendable struct GetMap_Response {
+      struct GetMap_Response {
         nav_msgs::msg::OccupancyGrid map;
       };
   };

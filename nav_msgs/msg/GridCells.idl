@@ -22,7 +22,7 @@
 
 module nav_msgs {
   module msg {
-      @appendable struct GridCells {
+      struct GridCells {
         std_msgs::msg::Header header;
         float cell_width;
         float cell_height;

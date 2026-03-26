@@ -32,7 +32,7 @@ module lifecycle_msgs {
         const octet TRANSITION_STATE_DEACTIVATING = 14;
         const octet TRANSITION_STATE_ERRORPROCESSING = 15;
       };
-      @appendable struct State {
+      struct State {
         octet id;
         string label;
       };

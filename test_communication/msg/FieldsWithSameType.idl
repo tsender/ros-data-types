@@ -21,7 +21,7 @@
 
 module test_communication {
   module msg {
-      @appendable struct FieldsWithSameType {
+      struct FieldsWithSameType {
         test_msgs::msg::BasicTypes basic_types_values1;
         test_msgs::msg::BasicTypes basic_types_values2;
       };

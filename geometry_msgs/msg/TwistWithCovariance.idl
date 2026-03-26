@@ -21,7 +21,7 @@
 
 module geometry_msgs {
   module msg {
-      @appendable struct TwistWithCovariance {
+      struct TwistWithCovariance {
         geometry_msgs::msg::Twist twist;
         double covariance[36];
       };

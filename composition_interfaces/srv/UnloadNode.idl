@@ -19,10 +19,10 @@
 
 module composition_interfaces {
   module srv {
-    @appendable struct UnloadNode_Request {
+    struct UnloadNode_Request {
       uint64 unique_id;
     };
-    @appendable struct UnloadNode_Response {
+    struct UnloadNode_Response {
       boolean success;
       string error_message;
     };

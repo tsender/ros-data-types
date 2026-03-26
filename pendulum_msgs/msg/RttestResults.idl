@@ -23,7 +23,7 @@
 
 module pendulum_msgs {
   module msg {
-      @appendable struct RttestResults {
+      struct RttestResults {
         builtin_interfaces::msg::Time stamp;
         pendulum_msgs::msg::JointCommand command;
         pendulum_msgs::msg::JointState state;

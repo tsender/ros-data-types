@@ -21,7 +21,7 @@
 
 module sensor_msgs {
   module msg {
-      @appendable struct CompressedImage {
+      struct CompressedImage {
         std_msgs::msg::Header header;
         string format;
         sequence<octet> data;

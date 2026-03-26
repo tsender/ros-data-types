@@ -21,13 +21,13 @@
 
 module move_base_msgs {
   module action {
-      @appendable struct MoveBase_Goal {
+      struct MoveBase_Goal {
         geometry_msgs::msg::PoseStamped target_pose;
       };
-      @appendable struct MoveBase_Feedback {
+      struct MoveBase_Feedback {
         geometry_msgs::msg::PoseStamped base_position;
       };
-      @appendable struct MoveBase_Result {
+      struct MoveBase_Result {
         octet structure_needs_at_least_one_member;
       };
   };

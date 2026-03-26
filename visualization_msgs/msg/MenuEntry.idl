@@ -24,7 +24,7 @@ module visualization_msgs {
         const octet ROSRUN = 1;
         const octet ROSLAUNCH = 2;
       };
-      @appendable struct MenuEntry {
+      struct MenuEntry {
         uint32 id;
         uint32 parent_id;
         string title;

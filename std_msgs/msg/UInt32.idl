@@ -19,7 +19,7 @@
 
 module std_msgs {
   module msg {
-      @appendable struct UInt32 {
+      struct UInt32 {
         uint32 data;
       };
   };

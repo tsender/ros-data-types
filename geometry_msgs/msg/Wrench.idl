@@ -21,7 +21,7 @@
 
 module geometry_msgs {
   module msg {
-      @appendable struct Wrench {
+      struct Wrench {
         geometry_msgs::msg::Vector3 force;
         geometry_msgs::msg::Vector3 torque;
       };

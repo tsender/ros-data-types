@@ -24,7 +24,7 @@
 
 module tf2_msgs {
   module action {
-      @appendable struct LookupTransform_Goal {
+      struct LookupTransform_Goal {
         string target_frame;
         string source_frame;
         builtin_interfaces::msg::Time source_time;
@@ -33,10 +33,10 @@ module tf2_msgs {
         string fixed_frame;
         boolean advanced;
       };
-      @appendable struct LookupTransform_Feedback {
+      struct LookupTransform_Feedback {
         octet structure_needs_at_least_one_member;
       };
-      @appendable struct LookupTransform_Result {
+      struct LookupTransform_Result {
         geometry_msgs::msg::TransformStamped transform;
         tf2_msgs::msg::TF2Error error;
       };

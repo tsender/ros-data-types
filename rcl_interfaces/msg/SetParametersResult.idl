@@ -19,7 +19,7 @@
 
 module rcl_interfaces {
   module msg {
-      @appendable struct SetParametersResult {
+      struct SetParametersResult {
         boolean successful;
         string reason;
       };

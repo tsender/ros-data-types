@@ -27,7 +27,7 @@ module statistics_msgs {
         const octet STATISTICS_DATA_TYPE_STDDEV = 4;
         const octet STATISTICS_DATA_TYPE_SAMPLE_COUNT = 5;
       };
-      @appendable struct StatisticDataType {
+      struct StatisticDataType {
         octet structure_needs_at_least_one_member;
       };
   };

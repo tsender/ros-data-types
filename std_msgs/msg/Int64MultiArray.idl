@@ -21,7 +21,7 @@
 
 module std_msgs {
   module msg {
-      @appendable struct Int64MultiArray {
+      struct Int64MultiArray {
         std_msgs::msg::MultiArrayLayout layout;
         sequence<int64> data;
       };

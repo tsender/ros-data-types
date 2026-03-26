@@ -21,7 +21,7 @@
 
 module rosidl_generator_py {
   module msg {
-      @appendable struct Nested {
+      struct Nested {
         rosidl_generator_py::msg::BasicTypes basic_types_value;
       };
   };

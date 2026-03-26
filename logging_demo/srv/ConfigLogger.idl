@@ -19,11 +19,11 @@
 
 module logging_demo {
   module srv {
-      @appendable struct ConfigLogger_Request {
+      struct ConfigLogger_Request {
         string logger_name;
         string level;
       };
-      @appendable struct ConfigLogger_Response {
+      struct ConfigLogger_Response {
         boolean success;
       };
   };

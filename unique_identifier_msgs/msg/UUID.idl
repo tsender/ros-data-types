@@ -19,7 +19,7 @@
 
 module unique_identifier_msgs {
   module msg {
-      @appendable struct UUID {
+      struct UUID {
         octet uuid[16];
       };
   };

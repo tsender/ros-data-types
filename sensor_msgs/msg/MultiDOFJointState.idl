@@ -24,7 +24,7 @@
 
 module sensor_msgs {
   module msg {
-      @appendable struct MultiDOFJointState {
+      struct MultiDOFJointState {
         std_msgs::msg::Header header;
         sequence<string> joint_names;
         sequence<geometry_msgs::msg::Transform> transforms;

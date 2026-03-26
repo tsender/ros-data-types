@@ -21,7 +21,7 @@
 
 module rqt_py_common {
   module msg {
-      @appendable struct ArrayVal {
+      struct ArrayVal {
         rqt_py_common::msg::Val vals[5];
       };
   };

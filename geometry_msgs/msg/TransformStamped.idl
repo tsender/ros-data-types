@@ -22,7 +22,7 @@
 
 module geometry_msgs {
   module msg {
-      @appendable struct TransformStamped {
+      struct TransformStamped {
         std_msgs::msg::Header header;
         string child_frame_id;
         geometry_msgs::msg::Transform transform;

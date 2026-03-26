@@ -21,10 +21,10 @@
 
 module lifecycle_msgs {
   module srv {
-      @appendable struct GetAvailableTransitions_Request {
+      struct GetAvailableTransitions_Request {
         octet structure_needs_at_least_one_member;
       };
-      @appendable struct GetAvailableTransitions_Response {
+      struct GetAvailableTransitions_Response {
         sequence<lifecycle_msgs::msg::TransitionDescription> available_transitions;
       };
   };

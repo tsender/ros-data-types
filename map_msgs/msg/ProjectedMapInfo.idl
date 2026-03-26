@@ -19,7 +19,7 @@
 
 module map_msgs {
   module msg {
-      @appendable struct ProjectedMapInfo {
+      struct ProjectedMapInfo {
         string frame_id;
         double x;
         double y;

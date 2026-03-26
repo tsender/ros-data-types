@@ -21,10 +21,10 @@
 
 module diagnostic_msgs {
   module srv {
-    @appendable struct SelfTest_Request {
+    struct SelfTest_Request {
       octet structure_needs_at_least_one_member;
     };
-    @appendable struct SelfTest_Response {
+    struct SelfTest_Response {
       string id;
       octet passed;
       sequence<diagnostic_msgs::msg::DiagnosticStatus> status;

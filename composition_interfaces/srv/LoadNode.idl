@@ -21,7 +21,7 @@
 
 module composition_interfaces {
   module srv {
-    @appendable struct LoadNode_Request {
+    struct LoadNode_Request {
       string package_name;
       string plugin_name;
       string node_name;
@@ -31,7 +31,7 @@ module composition_interfaces {
       sequence<rcl_interfaces::msg::Parameter> parameters;
       sequence<rcl_interfaces::msg::Parameter> extra_arguments;
     };
-    @appendable struct LoadNode_Response {
+    struct LoadNode_Response {
       boolean success;
       string error_message;
       string full_node_name;

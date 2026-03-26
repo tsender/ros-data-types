@@ -19,7 +19,7 @@
 
 module sensor_msgs {
   module msg {
-      @appendable struct ChannelFloat32 {
+      struct ChannelFloat32 {
         string name;
         sequence<float> values;
       };

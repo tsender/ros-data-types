@@ -21,7 +21,7 @@
 
 module action_msgs {
   module srv {
-    @appendable struct CancelGoal_Request {
+    struct CancelGoal_Request {
       action_msgs::msg::GoalInfo goal_info;
     };
     module CancelGoal_Response_Constants {
@@ -30,7 +30,7 @@ module action_msgs {
       const octet ERROR_UNKNOWN_GOAL_ID = 2;
       const octet ERROR_GOAL_TERMINATED = 3;
     };
-    @appendable struct CancelGoal_Response {
+    struct CancelGoal_Response {
       octet return_code;
       sequence<action_msgs::msg::GoalInfo> goals_canceling;
     };

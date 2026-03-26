@@ -19,13 +19,13 @@
 
 module action_tutorials_interfaces {
   module action {
-      @appendable struct Fibonacci_Goal {
+      struct Fibonacci_Goal {
         int32 order;
       };
-      @appendable struct Fibonacci_Feedback {
+      struct Fibonacci_Feedback {
         sequence<int32> partial_sequence;
       };
-      @appendable struct Fibonacci_Result {
+      struct Fibonacci_Result {
         sequence<int32> sequence;
       };
   };

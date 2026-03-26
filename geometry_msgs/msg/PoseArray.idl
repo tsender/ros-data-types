@@ -22,7 +22,7 @@
 
 module geometry_msgs {
   module msg {
-      @appendable struct PoseArray {
+      struct PoseArray {
         std_msgs::msg::Header header;
         sequence<geometry_msgs::msg::Pose> poses;
       };

@@ -19,10 +19,10 @@
 
 module std_srvs {
   module srv {
-      @appendable struct Empty_Request {
+      struct Empty_Request {
         octet structure_needs_at_least_one_member;
       };
-      @appendable struct Empty_Response {
+      struct Empty_Response {
         octet structure_needs_at_least_one_member;
       };
   };

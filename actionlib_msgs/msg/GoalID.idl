@@ -21,7 +21,7 @@
 
 module actionlib_msgs {
   module msg {
-    @appendable struct GoalID {
+    struct GoalID {
       builtin_interfaces::msg::Time stamp;
       string id;
     };

@@ -19,7 +19,7 @@
 
 module rosidl_generator_py {
   module msg {
-      @appendable struct WStrings {
+      struct WStrings {
         wstring wstring_value;
         wstring wstring_value_default1;
         wstring wstring_value_default2;

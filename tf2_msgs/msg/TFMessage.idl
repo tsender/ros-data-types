@@ -21,7 +21,7 @@
 
 module tf2_msgs {
   module msg {
-      @appendable struct TFMessage {
+      struct TFMessage {
         sequence<geometry_msgs::msg::TransformStamped> transforms;
       };
   };

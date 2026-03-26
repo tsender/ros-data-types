@@ -21,7 +21,7 @@
 
 module geometry_msgs {
   module msg {
-      @appendable struct PoseWithCovariance {
+      struct PoseWithCovariance {
         geometry_msgs::msg::Pose pose;
         double covariance[36];
       };

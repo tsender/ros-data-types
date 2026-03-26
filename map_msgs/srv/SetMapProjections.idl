@@ -21,10 +21,10 @@
 
 module map_msgs {
   module srv {
-      @appendable struct SetMapProjections_Request {
+      struct SetMapProjections_Request {
         octet structure_needs_at_least_one_member;
       };
-      @appendable struct SetMapProjections_Response {
+      struct SetMapProjections_Response {
         sequence<map_msgs::msg::ProjectedMapInfo> projected_maps_info;
       };
   };

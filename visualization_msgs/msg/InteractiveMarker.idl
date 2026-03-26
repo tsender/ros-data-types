@@ -24,7 +24,7 @@
 
 module visualization_msgs {
   module msg {
-      @appendable struct InteractiveMarker {
+      struct InteractiveMarker {
         std_msgs::msg::Header header;
         geometry_msgs::msg::Pose pose;
         string name;

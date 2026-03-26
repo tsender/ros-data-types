@@ -21,10 +21,10 @@
 
 module lifecycle_msgs {
   module srv {
-      @appendable struct GetState_Request {
+      struct GetState_Request {
         octet structure_needs_at_least_one_member;
       };
-      @appendable struct GetState_Response {
+      struct GetState_Response {
         lifecycle_msgs::msg::State current_state;
       };
   };

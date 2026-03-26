@@ -23,7 +23,7 @@
 
 module sensor_msgs {
   module msg {
-      @appendable struct Imu {
+      struct Imu {
         std_msgs::msg::Header header;
         geometry_msgs::msg::Quaternion orientation;
         double orientation_covariance[9];

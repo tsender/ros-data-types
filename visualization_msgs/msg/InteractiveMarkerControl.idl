@@ -37,7 +37,7 @@ module visualization_msgs {
         const octet ROTATE_3D = 8;
         const octet MOVE_ROTATE_3D = 9;
       };
-      @appendable struct InteractiveMarkerControl {
+      struct InteractiveMarkerControl {
         string name;
         geometry_msgs::msg::Quaternion orientation;
         octet orientation_mode;

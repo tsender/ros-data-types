@@ -21,7 +21,7 @@
 
 module geometry_msgs {
   module msg {
-    @appendable struct AccelWithCovariance {
+    struct AccelWithCovariance {
       geometry_msgs::msg::Accel accel;
       double covariance[36];
     };

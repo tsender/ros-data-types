@@ -23,7 +23,7 @@
 
 module rosidl_generator_py {
   module msg {
-      @appendable struct UnboundedSequences {
+      struct UnboundedSequences {
         sequence<boolean> bool_values;
         sequence<octet> byte_values;
         sequence<octet> char_values;

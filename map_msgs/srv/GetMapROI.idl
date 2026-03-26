@@ -21,13 +21,13 @@
 
 module map_msgs {
   module srv {
-      @appendable struct GetMapROI_Request {
+      struct GetMapROI_Request {
         double x;
         double y;
         double l_x;
         double l_y;
       };
-      @appendable struct GetMapROI_Response {
+      struct GetMapROI_Response {
         nav_msgs::msg::OccupancyGrid sub_map;
       };
   };

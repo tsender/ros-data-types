@@ -19,10 +19,10 @@
 
 module rcl_interfaces {
   module srv {
-      @appendable struct GetParameterTypes_Request {
+      struct GetParameterTypes_Request {
         sequence<string> names;
       };
-      @appendable struct GetParameterTypes_Response {
+      struct GetParameterTypes_Response {
         sequence<octet> types;
       };
   };

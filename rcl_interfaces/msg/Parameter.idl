@@ -21,7 +21,7 @@
 
 module rcl_interfaces {
   module msg {
-      @appendable struct Parameter {
+      struct Parameter {
         string name;
         rcl_interfaces::msg::ParameterValue value;
       };

@@ -19,10 +19,10 @@
 
 module tf2_msgs {
   module srv {
-      @appendable struct FrameGraph_Request {
+      struct FrameGraph_Request {
         octet structure_needs_at_least_one_member;
       };
-      @appendable struct FrameGraph_Response {
+      struct FrameGraph_Response {
         string frame_yaml;
       };
   };

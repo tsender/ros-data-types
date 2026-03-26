@@ -34,7 +34,7 @@ module rosidl_generator_py {
         const int64 INT64_CONST = -40000000;
         const uint64 UINT64_CONST = 50000000;
       };
-      @appendable struct Constants {
+      struct Constants {
         octet structure_needs_at_least_one_member;
       };
   };

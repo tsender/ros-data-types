@@ -19,7 +19,7 @@
 
 module pendulum_msgs {
   module msg {
-      @appendable struct JointState {
+      struct JointState {
         double position;
         double velocity;
         double effort;

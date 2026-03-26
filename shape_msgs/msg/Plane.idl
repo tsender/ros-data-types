@@ -19,7 +19,7 @@
 
 module shape_msgs {
   module msg {
-      @appendable struct Plane {
+      struct Plane {
         double coef[4];
       };
   };

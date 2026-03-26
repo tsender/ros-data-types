@@ -21,7 +21,7 @@
 
 module sensor_msgs {
   module msg {
-      @appendable struct Image {
+      struct Image {
         std_msgs::msg::Header header;
         uint32 height;
         uint32 width;

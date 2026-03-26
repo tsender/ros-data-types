@@ -21,7 +21,7 @@
 
 module trajectory_msgs {
   module msg {
-      @appendable struct JointTrajectoryPoint {
+      struct JointTrajectoryPoint {
         sequence<double> positions;
         sequence<double> velocities;
         sequence<double> accelerations;

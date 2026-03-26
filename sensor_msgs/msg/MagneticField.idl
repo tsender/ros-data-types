@@ -22,7 +22,7 @@
 
 module sensor_msgs {
   module msg {
-      @appendable struct MagneticField {
+      struct MagneticField {
         std_msgs::msg::Header header;
         geometry_msgs::msg::Vector3 magnetic_field;
         double magnetic_field_covariance[9];

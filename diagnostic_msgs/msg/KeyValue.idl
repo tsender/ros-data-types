@@ -19,7 +19,7 @@
 
 module diagnostic_msgs {
   module msg {
-    @appendable struct KeyValue {
+    struct KeyValue {
       string key;
       string value;
     };

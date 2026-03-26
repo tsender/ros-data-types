@@ -21,7 +21,7 @@
 
 module geometry_msgs {
   module msg {
-      @appendable struct Twist {
+      struct Twist {
         geometry_msgs::msg::Vector3 linear;
         geometry_msgs::msg::Vector3 angular;
       };

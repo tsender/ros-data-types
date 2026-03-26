@@ -19,10 +19,10 @@
 
 module composition_interfaces {
   module srv {
-    @appendable struct ListNodes_Request {
+    struct ListNodes_Request {
       octet structure_needs_at_least_one_member;
     };
-    @appendable struct ListNodes_Response {
+    struct ListNodes_Response {
       sequence<string> full_node_names;
       sequence<uint64> unique_ids;
     };

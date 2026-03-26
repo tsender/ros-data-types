@@ -24,11 +24,11 @@ module rcl_interfaces {
       module ListParameters_Request_Constants {
         const uint64 DEPTH_RECURSIVE = 0;
       };
-      @appendable struct ListParameters_Request {
+      struct ListParameters_Request {
         sequence<string> prefixes;
         uint64 depth;
       };
-      @appendable struct ListParameters_Response {
+      struct ListParameters_Response {
         rcl_interfaces::msg::ListParametersResult result;
       };
   };

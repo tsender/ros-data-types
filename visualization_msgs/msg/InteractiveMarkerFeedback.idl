@@ -31,7 +31,7 @@ module visualization_msgs {
         const octet MOUSE_DOWN = 4;
         const octet MOUSE_UP = 5;
       };
-      @appendable struct InteractiveMarkerFeedback {
+      struct InteractiveMarkerFeedback {
         std_msgs::msg::Header header;
         string client_id;
         string marker_name;
